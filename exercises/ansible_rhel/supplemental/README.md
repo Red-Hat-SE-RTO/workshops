@@ -7,6 +7,7 @@ There is also a series of exercises that go above and beyond our normal workshop
 - [ServiceNow initgration with AAP](https://external.ink?to=/play.instruqt.com/embed/redhat/tracks/getting-started-servicenow-automation?token=em_5ktpLJWtzpbqcDyM&show_challenges=true)
 - [Ad Hoc Commands, Templates and Variables](ad_hoc_and_templates)
 - [Ansible Tower - Inventories, credentials and ad hoc commands](ansible_tower_credentials)
+- [Automation Execution Environments](ansible_tower_credentials)
 
 ## Navigation
 
