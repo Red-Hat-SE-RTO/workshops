@@ -4,6 +4,7 @@ There is also a series of exercises that go above and beyond our normal workshop
 
 - [Ad Hoc Commands, Templates and Variables](ad_hoc_and_templates)
 - [Ansible Tower - Inventories, credentials and ad hoc commands](ansible_tower_credentials)
+- [Automation Execution Environments](ansible_tower_credentials)
 
 
 ## Navigation
