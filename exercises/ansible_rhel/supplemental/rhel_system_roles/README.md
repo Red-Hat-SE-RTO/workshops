@@ -22,6 +22,20 @@ Security-related roles:
   - <strong>ssh</strong> and <strong>sshd</strong> configure the SSH client and server, respectively.
   - <strong>crypto_policies</strong> configures the system-wide cryptographic policies.
 
+Configuration-related roles:
+
+  - <strong>timesync</strong> configures time synchronization.
+  - <strong>network</strong> configures networking.
+  - <strong>kdump</strong> configures the kernel crash dump.
+  - <strong>storage</strong> configures local storage.
+  - <strong>kernel_settings</strong> configure kernel settings.
+  - <strong>metrics</strong> configures system metrics (using Performance Co-Pilot).
+  - <strong>logging</strong> configures logging (rsyslog).
+  - <strong>postfix</strong> (tech preview) configures the postfix email server.
+  - <strong>ha_cluster</strong> (tech preview) manages high availability clustering.
+
+For an up-to-date list of available roles, as well as a support matrix that details which versions of RHEL are supported by each role, [refer to this page](https://access.redhat.com/articles/3050101). 
+
 ## ORIGINAL CONTENT BELOW - KEEPING TO COPY MARKDOWN SYNTAX
 Let’s get started with: The first thing we need is an inventory of your managed hosts. This is the equivalent of an inventory file in Ansible Engine. There is a lot more to it (like dynamic inventories) but let’s start with the basics.
 
