@@ -15,13 +15,13 @@ RHEL System Roles are supported with your RHEL subscription and are packaged as 
 
 Security-related roles:
 
-  - <strong>selinux<strong> allows for configuration of SELinux.
+  - <strong>selinux</strong> allows for configuration of SELinux.
   - certificate can manage TLS/SSL certificate issuance and renewal.
   - tlog configures session recording.
   - nbde_client and nbde_server configure network bound disk encryption.
   - ssh and sshd configure the SSH client and server, respectively.
   - crypto_policies configures the system-wide cryptographic policies.
-  
+
 ## ORIGINAL CONTENT BELOW - KEEPING TO COPY MARKDOWN SYNTAX
 Let’s get started with: The first thing we need is an inventory of your managed hosts. This is the equivalent of an inventory file in Ansible Engine. There is a lot more to it (like dynamic inventories) but let’s start with the basics.
 
