@@ -1,13 +1,28 @@
 # Exercise 3.4 - Leveraging RHEL System Roles
 
-* [what are RHEL System Roles](##what-are-rhel-system-roles)
+* [what are RHEL System Roles](#what-are-rhel-system-roles)
 * [Using RHEL System Roles](#using-rhel-system-roles)
 * [Configure Machine Credentials](#configure-machine-credentials)
 * [Run Ad Hoc Commands](#run-ad-hoc-commands)
 * [Challenge Lab: Ad Hoc Commands](#challenge-lab-ad-hoc-commands)
 
 ## What are RHEL System Roles
+RHEL System Roles are a collection of Ansible roles and modules that can help automate the management and configuration of RHEL Systems. RHEL System Roles can help provide consistent and repeatable configuration, reduce technical burdens, and streamline administration.
 
+Administrators can select from a library of common services and configuration tasks provided by RHEL System Roles. This interface enables managing system configurations across multiple versions (RHEL 8, RHEL 7, and in some cases RHEL 6) and supports the execution of manual tasks consistently across physical, virtual, private cloud, and public cloud environments.
+
+RHEL System Roles are supported with your RHEL subscription and are packaged as RPMs included with RHEL. However, if you have an Red Hat Ansible Automation Platform subscription and utilize Ansible Tower, you can also access the latest  RHEL System Roles from Ansible Automation Hub for use in Tower.
+
+Security-related roles:
+
+  - <strong>selinux<strong> allows for configuration of SELinux.
+  - certificate can manage TLS/SSL certificate issuance and renewal.
+  - tlog configures session recording.
+  - nbde_client and nbde_server configure network bound disk encryption.
+  - ssh and sshd configure the SSH client and server, respectively.
+  - crypto_policies configures the system-wide cryptographic policies.
+  
+## ORIGINAL CONTENT BELOW - KEEPING TO COPY MARKDOWN SYNTAX
 Let’s get started with: The first thing we need is an inventory of your managed hosts. This is the equivalent of an inventory file in Ansible Engine. There is a lot more to it (like dynamic inventories) but let’s start with the basics.
 
   - You should already have the web UI open, if not: Point your browser to the URL you were given, similar to **https://student\<X\>.workshopname.rhdemo.io** (replace "\<X\>" with your student number and "workshopname" with the name of your current workshop) and log in as `admin`. The password will be provided by the instructor.
