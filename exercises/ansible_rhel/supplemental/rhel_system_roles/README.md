@@ -1,6 +1,7 @@
 # Exercise 3.4 - Leveraging RHEL System Roles
 
 * [what are RHEL System Roles](#what-are-rhel-system-roles)
+* [Step 1 - Use System Roles Collection from Automation Hub](#configure-controller-and-automation-hub)
 * [Using RHEL System Roles](#using-rhel-system-roles)
 * [Configure Machine Credentials](#configure-machine-credentials)
 * [Run Ad Hoc Commands](#run-ad-hoc-commands)
@@ -35,6 +36,48 @@ Configuration-related roles:
   - <strong>ha_cluster</strong> (tech preview) manages high availability clustering.
 
 For an up-to-date list of available roles, as well as a support matrix that details which versions of RHEL are supported by each role, [refer to this page](https://access.redhat.com/articles/3050101). 
+
+## Configure Contraoller and Automation Hub
+In order to scale automation and keep consistency, Execution Environment ensure that all dependencies for the collections used in your playbook are present no matter where they are deployed.  However, in this exercise, we will pull the latest RHEL Systems Role collection directly from Autoamtion Hub at the time of playbook execution.
+
+### 1.1 - Add credentials for Automation Hub
+
+Login as admin to your Automation Controller
+
+Resources -> Credentials -> Add
+
+<table>
+    <tr>
+      <th>Parameter</th>
+      <th>Value</th>
+    </tr>
+    <tr>
+      <td>NAME</td>
+      <td>Automation Hub</td>
+    </tr>
+    <tr>
+      <td>ORGANIZATION</td>
+      <td>Default</td>
+    </tr>
+    <tr>
+      <td>CREDENTIAL TYPE</td>
+      <td>Ansible Galaxy/Automation Hub API Token</td>
+    </tr>
+    <tr>
+      <td>GALAXY SERVER URL</td>
+      <td>Get from Your Instructor</td>
+    </tr>
+    <tr>
+      <td>Auth Server URL</td>
+      <td>Get from your Instructor</td>
+    </tr>
+    <tr>
+      <td>API Token</td>
+      <td>Get from your Instructor</td>
+    </tr>
+  </table>
+
+Click <strong>Save</strong>
 
 ## ORIGINAL CONTENT BELOW - KEEPING TO COPY MARKDOWN SYNTAX
 Let’s get started with: The first thing we need is an inventory of your managed hosts. This is the equivalent of an inventory file in Ansible Engine. There is a lot more to it (like dynamic inventories) but let’s start with the basics.
