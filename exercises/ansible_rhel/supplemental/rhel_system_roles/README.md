@@ -1,12 +1,12 @@
-# Exercise 3.1 - Creating Custom Execution Environments for RHEL System Roles
+# Exercise 3.4 - Leveraging RHEL System Roles
 
-* [Create an Inventory](#create-an-inventory)
-* [Machine Credentials](#machine-credentials)
+* [what are RHEL System Roles](#what_are_rhel_system_roles)
+* [Using RHEL System Roles](#using_rhel_system_roles)
 * [Configure Machine Credentials](#configure-machine-credentials)
 * [Run Ad Hoc Commands](#run-ad-hoc-commands)
 * [Challenge Lab: Ad Hoc Commands](#challenge-lab-ad-hoc-commands)
 
-## Create an Inventory
+## What are RHEL System Roles
 
 Let’s get started with: The first thing we need is an inventory of your managed hosts. This is the equivalent of an inventory file in Ansible Engine. There is a lot more to it (like dynamic inventories) but let’s start with the basics.
 
@@ -81,7 +81,7 @@ Note the names for the nodes and the IP addresses, we will use them to fill the 
 
 You have now created an inventory with three managed hosts.
 
-## Machine Credentials
+## Using RHEL System Roles
 
 One of the great features of Ansible Tower is to make credentials usable to users without making them visible. To allow Tower to execute jobs on remote hosts, you must configure connection credentials.
 
