@@ -1,7 +1,7 @@
 # Exercise 3.4 - Leveraging RHEL System Roles
 
-* [what are RHEL System Roles](#what_are_rhel_system_roles)
-* [Using RHEL System Roles](#using_rhel_system_roles)
+* [what are RHEL System Roles](##what-are-rhel-system-roles)
+* [Using RHEL System Roles](#using-rhel-system-roles)
 * [Configure Machine Credentials](#configure-machine-credentials)
 * [Run Ad Hoc Commands](#run-ad-hoc-commands)
 * [Challenge Lab: Ad Hoc Commands](#challenge-lab-ad-hoc-commands)
