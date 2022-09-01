@@ -1,7 +1,7 @@
 # Exercise 3.4 - Leveraging RHEL System Roles
 
-* [what are RHEL System Roles](#what-are-rhel-system-roles)
-* [Step 1 - Use System Roles Collection from Automation Hub](#configure-controller-and-automation-hub)
+* [What are RHEL System Roles](#what-are-rhel-system-roles)
+* [Step 1 - Use System Roles Collection from Automation Hub](#Step-1:-Use-System-Roles-Collection-from-Automation-Hub)
 * [Using RHEL System Roles](#using-rhel-system-roles)
 * [Configure Machine Credentials](#configure-machine-credentials)
 * [Run Ad Hoc Commands](#run-ad-hoc-commands)
@@ -37,7 +37,8 @@ Configuration-related roles:
 
 For an up-to-date list of available roles, as well as a support matrix that details which versions of RHEL are supported by each role, [refer to this page](https://access.redhat.com/articles/3050101). 
 
-## Configure Contraoller and Automation Hub
+
+## Step 1: Use System Roles Collection from Automation Hub
 In order to scale automation and keep consistency, Execution Environment ensure that all dependencies for the collections used in your playbook are present no matter where they are deployed.  However, in this exercise, we will pull the latest RHEL Systems Role collection directly from Autoamtion Hub at the time of playbook execution.
 
 ### 1.1 - Add credentials for Automation Hub
@@ -45,6 +46,12 @@ In order to scale automation and keep consistency, Execution Environment ensure 
 Login as admin to your Automation Controller
 
 Resources -> Credentials -> Add
+
+> **Warning**
+>
+> Before proceeding, confirm that no other individuals or groups within your company have already generated a token for the hosted Automation Hub associated with your portal account at console.redhat.com.
+> 
+> Clicking "Load token" will generate a new token and previous tokens will be invalid
 
 <table>
     <tr>
@@ -61,21 +68,25 @@ Resources -> Credentials -> Add
     </tr>
     <tr>
       <td>CREDENTIAL TYPE</td>
-      <td>Ansible Galaxy/Automation Hub API Token</td>
+      <td>Ansible Galaxy/Automation Hub API Token*</td>
     </tr>
     <tr>
       <td>GALAXY SERVER URL</td>
-      <td>Get from Your Instructor</td>
+      <td>Get from Your Instructor*</td>
     </tr>
     <tr>
       <td>Auth Server URL</td>
-      <td>Get from your Instructor</td>
+      <td>Get from your Instructor*</td>
     </tr>
     <tr>
       <td>API Token</td>
       <td>Get from your Instructor</td>
     </tr>
   </table>
+
+  * One user with administrator access must retrieve these values from console.redhat.com -> Ansible Automation Platform -> Automation Hub -> Connect to Hub -> click "Load token"
+
+  Provide the resulting fields to the rest of the students
 
 Click <strong>Save</strong>
 
