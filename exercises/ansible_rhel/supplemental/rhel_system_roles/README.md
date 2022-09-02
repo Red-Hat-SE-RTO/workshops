@@ -84,7 +84,7 @@ Resources -> Credentials -> Add
     </tr>
   </table>
 
-  \*\* One user with administrator access must retrieve these values from [console.redhat.com](https://console.redhat.com/ansible/automation-hub/token#) -> click **"Load token"**
+  \*\* One user with administrator access must retrieve these values from [console.redhat.com](https://console.redhat.com/ansible/automation-hub/token#) -> click **"Load token"**<br>
   \*\*Provide the resulting fields to the rest of the students
   ![ansible rhel lab diagram](images/automation_hub_token_info.png)
 
