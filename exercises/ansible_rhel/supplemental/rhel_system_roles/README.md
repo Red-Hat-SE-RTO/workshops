@@ -72,19 +72,19 @@ Resources -> Credentials -> Add
     </tr>
     <tr>
       <td>GALAXY SERVER URL</td>
-      <td>Get from Your Instructor*</td>
+      <td>Get from Your Instructor**</td>
     </tr>
     <tr>
       <td>Auth Server URL</td>
-      <td>Get from your Instructor*</td>
+      <td>Get from your Instructor**</td>
     </tr>
     <tr>
       <td>API Token</td>
-      <td>Get from your Instructor</td>
+      <td>Get from your Instructor**</td>
     </tr>
   </table>
 
-  * One user with administrator access must retrieve these values from [console.redhat.com](https://console.redhat.com/ansible/automation-hub/token#) -> click **"Load token"**
+  \*\* One user with administrator access must retrieve these values from [console.redhat.com](https://console.redhat.com/ansible/automation-hub/token#) -> click **"Load token"**
 
   Provide the resulting fields to the rest of the students
   ![ansible rhel lab diagram](images/automation_hub_token_info.png)
