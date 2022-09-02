@@ -51,7 +51,7 @@ Resources -> Credentials -> Add
 >
 > Before proceeding, confirm that no other individuals or groups within your company have already generated a token for the hosted Automation Hub associated with your portal account at console.redhat.com.
 > 
-> Clicking "Load token" will generate a new token and previous tokens will be invalid
+> Clicking **"Load token"** will generate a new token and previous tokens will be invalid
 
 <table>
     <tr>
@@ -84,9 +84,11 @@ Resources -> Credentials -> Add
     </tr>
   </table>
 
-  * One user with administrator access must retrieve these values from console.redhat.com -> Ansible Automation Platform -> Automation Hub -> Connect to Hub -> click "Load token"
+  * One user with administrator access must retrieve these values from [console.redhat.com](https://console.redhat.com/ansible/automation-hub/token#) -> click **"Load token"**
 
   Provide the resulting fields to the rest of the students
+  ![ansible rhel lab diagram](../../images/rhel_lab_diagram.png)
+
 
 Click <strong>Save</strong>
 
