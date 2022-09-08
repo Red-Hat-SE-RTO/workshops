@@ -20,16 +20,14 @@ If you’re new to Ansible Automation, but want a quicker version of the origina
 
 The exercises are self explanatory and guide the participants through the entire lab. All concepts are explained when they are introduced.
 
-There is an optional presentation available to support the workshops and explain Automation, the basics of Ansible and the topics of the exercises in more detail:
-[Ansible RHEL Automation](../../decks/ansible_rhel_90.pdf)
-[Google source - Red Hat only](https://docs.google.com/presentation/d/143JtFwmz469ucKNbB4L5T-PtKfurjpcOmCICzSbwm3Y/edit?usp=sharing)
+We will also provide any presentation slides we have delivered today.
 
 Also have a look at our Ansible Best Practices Deck:
 [Ansible Best Practices](../../decks/ansible_best_practices.pdf)
 
 ## Time planning
 
-This workshop was created to last about 90 minutes and focuses more on targeting every day use cases to apply automation.
+This is a custom workshop and time may vary depending on questions and exposure to Ansible and concpets discussed.  Estimated completion time is 4 hours and focuses more on intermediate AAP 2 technology and use cases.
 
 ## Lab Diagram
 
@@ -41,8 +39,9 @@ This workshop was created to last about 90 minutes and focuses more on targeting
  - [Exercise 2 - Deep dive into Ansible Navigator](https://external.ink?to=/play.instruqt.com/embedv2/redhat/tracks/getting-started-ansible-navigator?token=em_gvby3leayr2ogdot)
  - [Exercise 3 - Building custom EE's with Ansible Builder](https://external.ink?to=/play.instruqt.com/embedv2/redhat/tracks/getting-started-ansible-builder?token=em_prdwsuxj78anshdl)
  - [Exercise 4 - Working in an Automation Mesh environment](https://external.ink?to=/play.instruqt.com/embed/redhat/tracks/getting-started-mesh?token=em_eGpRMNjJl3q9Lp7S&show_challenges=true)
- - [Exercise 5 - ServiceNow integration with AAP](https://external.ink?to=/play.instruqt.com/embed/redhat/tracks/getting-started-servicenow-automation?token=em_5ktpLJWtzpbqcDyM&show_challenges=true)
- - [Exercise 6 - System roles for RHEL in AAP2](rhel_system_roles)
+ - [Exercise 5 - System roles for RHEL in AAP2](rhel_system_roles)
+ - [Exercise 6 - ServiceNow integration with AAP](https://external.ink?to=/play.instruqt.com/embed/redhat/tracks/getting-started-servicenow-automation?token=em_5ktpLJWtzpbqcDyM&show_challenges=true)
+ 
 
 ---
 ![Red Hat Ansible Automation](../../images/rh-ansible-automation-platform.png)
