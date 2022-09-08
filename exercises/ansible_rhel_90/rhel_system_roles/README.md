@@ -12,7 +12,7 @@ RHEL System Roles are a collection of Ansible roles and modules that can help au
 
 Administrators can select from a library of common services and configuration tasks provided by RHEL System Roles. This interface enables managing system configurations across multiple versions (RHEL 8, RHEL 7, and in some cases RHEL 6) and supports the execution of manual tasks consistently across physical, virtual, private cloud, and public cloud environments.
 
-RHEL System Roles are supported with your RHEL subscription and are packaged as RPMs included with RHEL. However, if you have an Red Hat Ansible Automation Platform subscription and utilize Ansible Tower, you can also access the latest  RHEL System Roles from Ansible Automation Hub for use in Tower.
+RHEL System Roles are supported with your RHEL subscription and are packaged as RPMs included with RHEL. However, if you have an Red Hat Ansible Automation Platform subscription and utilize Ansible Tower, you can also access the latest  RHEL System Roles from Ansible Automation Hub for use in Automation Controller (f.k.a. Tower).
 
 Security-related roles:
 
@@ -38,8 +38,8 @@ Configuration-related roles:
 For an up-to-date list of available roles, as well as a support matrix that details which versions of RHEL are supported by each role, [refer to this page](https://access.redhat.com/articles/3050101). 
 
 
-## Step 1: Use System Roles Collection from Automation Hub
-In order to scale automation and keep consistency, Execution Environment ensure that all dependencies for the collections used in your playbook are present no matter where they are deployed.  However, in this exercise, we will pull the latest RHEL Systems Role collection directly from Autoamtion Hub at the time of playbook execution.
+## Step 1: Getting RHEL System Roles into an Execution Environment
+As mentioned before, AAP 2.x runs playbooks inside containers called execution environments (not on the control node).  We ship 3 EE's with AAP2 (minimal, supported, and compatibility)
 
 ### 1.1 - Add credentials for Automation Hub
 
@@ -85,11 +85,13 @@ Resources -> Credentials -> Add
   </table>
 
   \*\* One user with administrator access must retrieve these values from [console.redhat.com](https://console.redhat.com/ansible/automation-hub/token#) -> click **"Load token"**<br>
-  \*\*Provide the resulting fields to the rest of the students
+  \*\* Provide the resulting fields to the rest of the students
   ![ansible rhel lab diagram](images/automation_hub_token_info.png)
 
 
 Click <strong>Save</strong>
+
+### 1.2 - Add credentials for Automation Hub
 
 ## ORIGINAL CONTENT BELOW - KEEPING TO COPY MARKDOWN SYNTAX
 Let’s get started with: The first thing we need is an inventory of your managed hosts. This is the equivalent of an inventory file in Ansible Engine. There is a lot more to it (like dynamic inventories) but let’s start with the basics.

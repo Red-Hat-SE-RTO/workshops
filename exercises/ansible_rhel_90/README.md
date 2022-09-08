@@ -38,11 +38,11 @@ This workshop was created to last about 90 minutes and focuses more on targeting
 ## Ansible Automation Platform Exercises
 
  - [Exercise 1 - Overview of public cloud provisioning](1-setup)
- - [Exercise 2 - The Ansible Basics](2-thebasics)
- - [Exercise 3 - Deploying applications to linux hosts](3-playbook)
- - [Exercise 4 - Retrieving information from automation hosts](4-variables)
- - [Exercise 5 - Self-service IT via surveys](5-surveys)
- - [Exercise 6 - Overview of system roles for RHEL](6-system-roles)
+ - [Exercise 2 - Deep dive into Ansible Navigator](https://external.ink?to=/play.instruqt.com/embedv2/redhat/tracks/getting-started-ansible-navigator?token=em_gvby3leayr2ogdot)
+ - [Exercise 3 - Building custom EE's with Ansible Builder](https://external.ink?to=/play.instruqt.com/embedv2/redhat/tracks/getting-started-ansible-builder?token=em_prdwsuxj78anshdl)
+ - [Exercise 4 - Working in an Automation Mesh environment](https://external.ink?to=/play.instruqt.com/embed/redhat/tracks/getting-started-mesh?token=em_eGpRMNjJl3q9Lp7S&show_challenges=true)
+ - [Exercise 5 - ServiceNow integration with AAP](https://external.ink?to=/play.instruqt.com/embed/redhat/tracks/getting-started-servicenow-automation?token=em_5ktpLJWtzpbqcDyM&show_challenges=true)
+ - [Exercise 6 - System roles for RHEL in AAP2](rhel_system_roles)
 
 ---
 ![Red Hat Ansible Automation](../../images/rh-ansible-automation-platform.png)
