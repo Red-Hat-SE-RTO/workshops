@@ -26,7 +26,7 @@ We will need to use some Certified and Community collections to retrofit our Aut
 > Clicking **"Load token"** will generate a new token and previous tokens will be invalid
 
 * One user with administrator access must retrieve these values from [console.redhat.com](https://external.ink?to=/console.redhat.com/ansible/automation-hub/token#) -> click **"Load token"**<br>
-* Provide the resulting fields to the rest of the students
+* Provide the resulting fields to the rest of the students<br>
 
   ![ansible rhel lab diagram](images/automation_hub_token_info.png)
 
