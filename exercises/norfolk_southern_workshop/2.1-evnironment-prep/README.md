@@ -1,5 +1,14 @@
 # Exercise 2.1 - Environment Prep
 
+## Table of Contents
+
+* [Objective](#objective)
+* [Guide](#guide)
+* [Step 1 - Add Credentials for Automation Hub](#step-1---add-credentials-for-automation-hub)
+* [Step 2 - Listing Modules and Getting Help](#step-2---listing-modules-and-getting-help)
+
+## Objective
+
 This lab environment was not originally designed and configured to build custom EE’s so we will use Ansible automation to install and partially configure the Ansible Builder environment.
 
 We will need to use some Certified and Community collections to retrofit our Automation Controllers.  When we run a job template from a project with the requirements.yml file, it will pull the collections down from the Red Hat hosted Automation Hub.
@@ -8,13 +17,59 @@ We will need to use some Certified and Community collections to retrofit our Aut
 >
 > Not all collections have to be installed in containers, however, it is recommended to leverage the benefits stated earlier.  For this scenario, we will install some collections in a requirements.yml file in the project because we don’t have an EE yet with all the collections necessary to do so.  
 
-* [What are RHEL System Roles](#what-are-rhel-system-roles)
-* [Step 1 - Use System Roles Collection from Automation Hub](#Step-1:-Use-System-Roles-Collection-from-Automation-Hub)
-* [Using RHEL System Roles](#using-rhel-system-roles)
-* [Configure Machine Credentials](#configure-machine-credentials)
-* [Run Ad Hoc Commands](#run-ad-hoc-commands)
-* [Challenge Lab: Ad Hoc Commands](#challenge-lab-ad-hoc-commands)
 
+### Step 1 - Add Credentials for Automation Hub
+
+Login as admin to your Automation Controller
+
+Resources -> Credentials -> Add
+
+> **Warning**
+>
+> Before proceeding, confirm that no other individuals or groups within your company have already generated a token for the hosted Automation Hub associated with your portal account at console.redhat.com.
+> 
+> Clicking **"Load token"** will generate a new token and previous tokens will be invalid
+
+<table>
+    <tr>
+      <th>Parameter</th>
+      <th>Value</th>
+    </tr>
+    <tr>
+      <td>NAME</td>
+      <td>Automation Hub</td>
+    </tr>
+    <tr>
+      <td>ORGANIZATION</td>
+      <td>Default</td>
+    </tr>
+    <tr>
+      <td>CREDENTIAL TYPE</td>
+      <td>Ansible Galaxy/Automation Hub API Token*</td>
+    </tr>
+    <tr>
+      <td>GALAXY SERVER URL</td>
+      <td>Get from Your Instructor**</td>
+    </tr>
+    <tr>
+      <td>Auth Server URL</td>
+      <td>Get from your Instructor**</td>
+    </tr>
+    <tr>
+      <td>API Token</td>
+      <td>Get from your Instructor**</td>
+    </tr>
+  </table>
+
+  \*\* One user with administrator access must retrieve these values from [console.redhat.com](https://console.redhat.com/ansible/automation-hub/token#) -> click **"Load token"**<br>
+  \*\* Provide the resulting fields to the rest of the students
+  ![ansible rhel lab diagram](images/automation_hub_token_info.png)
+
+
+Click <strong>Save</strong>
+
+### 1.2 - Add credentials for Automation Hub
+"<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>"
 ## What are RHEL System Roles
 RHEL System Roles are a collection of Ansible roles and modules that can help automate the management and configuration of RHEL Systems. RHEL System Roles can help provide consistent and repeatable configuration, reduce technical burdens, and streamline administration.
 
