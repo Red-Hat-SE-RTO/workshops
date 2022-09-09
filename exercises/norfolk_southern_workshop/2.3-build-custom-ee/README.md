@@ -3,22 +3,38 @@
 ## Table of Contents
 
 * [Objective](#objective)
-* [Step 1 - Run “LINUX / Setup Builder”](#step-1---add-workshop-mod-project-to-controller)
-* [Step 2 - Create custom Execution Environment with RHEL System Roles collection](#step-2---run-job-template-to-add-additional-projects-and-job-templates)
-    * [Step 2.1 - Create custom Execution Environment with RHEL System Roles collection](#step-2---run-job-template-to-add-additional-projects-and-job-templates)
-    * [Step 2.2 - Create custom Execution Environment with RHEL System Roles collection](#step-2---run-job-template-to-add-additional-projects-and-job-templates)
-    * [Step 2.3 - Create custom Execution Environment with RHEL System Roles collection](#step-2---run-job-template-to-add-additional-projects-and-job-templates)
-    * [Step 2.4 - Create custom Execution Environment with RHEL System Roles collection](#step-2---run-job-template-to-add-additional-projects-and-job-templates)
-    * [Step 2.5 - Create custom Execution Environment with RHEL System Roles collection](#step-2---run-job-template-to-add-additional-projects-and-job-templates)
-    * [Step 2.6 - Create custom Execution Environment with RHEL System Roles collection](#step-2---run-job-template-to-add-additional-projects-and-job-templates)
-    * [Step 2.7 - Create custom Execution Environment with RHEL System Roles collection](#step-2---run-job-template-to-add-additional-projects-and-job-templates)
+* [Step 1 - Run “LINUX / Setup Builder”](#step-1---run-linux--setup-builderr)
+* [Step 2 - Create custom Execution Environment with RHEL System Roles collection](#step-2---create-custom-ee-with-rhel-system-roles-collection)
+    * [2.1 - Access Terminal](#21---access-terminal)
+    * [2.2 - Tell builder where to look for collections](#22---tell-builder-where-to-look-for-collections)
+    * [2.3 - Define how you want your EE built](#23---define-how-you-want-your-ee-built)
+    * [2.4 - Add RHEL System Roles collection](#24---add-rhel-system-roles-collection)
+    * [2.5 - Pull down base image](#25---pull-down-base-image)
+    * [2.6 - Build EE](#26---build-ee)
+    * [2.7 - Add EE to Automation Controller](#27---add-ee-to-automation-controller)
 
 ## Objective
 
 In exercise 2.2, the "LINUX / Setup Builder" job template was created.  Now we will execute this job template to build out and Ansible Builder environment on our controller node (**ansible-1** in **Workshop Inventory**). 
 
 
-### Step 1 - Add "Workshop Mod" project to Controller
+### Step 1 - Run “LINUX / Setup Builder”
+
+### Step 2 - Create custom EE with RHEL System Roles collection
+
+#### 2.1 - Access Terminal
+
+#### 2.2 - Tell builder where to look for collections
+
+#### 2.3 - Define how you want your EE built
+
+#### 2.4 - Add RHEL System Roles collection
+
+#### 2.5 - Pull down base image
+
+#### 2.6 - Build EE
+
+#### 2.7 - Add EE to Automation Controller
 
 * Copy the “Ansible Official Demo Project”:<br>
 **Resources** → **Projects** → Find **“Ansible Official Demo Project”** → Click the "2 Papers" icon (at the very end of the row)
