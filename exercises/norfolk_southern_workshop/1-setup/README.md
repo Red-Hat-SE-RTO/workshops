@@ -96,7 +96,7 @@ Run the `ansible-navigator` command with the `images` argument to look at execut
 $ ansible-navigator images
 ```
 
-![ansible-navigator images](imagespodman_images.png)
+![ansible-navigator images](images/podman_images.png)
 
 
 > Note: The output  you see might differ from the above output
