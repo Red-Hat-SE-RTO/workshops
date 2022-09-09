@@ -30,7 +30,7 @@ We will need to use some Certified and Community collections to retrofit our Aut
 
   ![ansible rhel lab diagram](images/automation_hub_token_info.png)
 
-* Login as **admin** to your Automation Controller
+* Login as **admin** to your Automation Controller<br>
 ![automation controller login creds](images/ac_login_creds.png)
 * Go to: **Resources -> Credentials -> Add**
 
