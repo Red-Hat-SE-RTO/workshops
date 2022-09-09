@@ -1,4 +1,4 @@
-# Exercise 2.1 - Environment Prep
+# Exercise 2.2 - Automation Controller Automating Itself
 
 ## Table of Contents
 
@@ -47,8 +47,7 @@ Wait for “Workshop Mod” to finish syncing (this will start automatically)
 
 * Go to: **Resources** -> **Templates** -> **Add** -> **Add job template**<br>
 * Fill out Job Template as follows:
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<table>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<table>
     <tr>
       <th>Field</th>
       <th>Value</th>
