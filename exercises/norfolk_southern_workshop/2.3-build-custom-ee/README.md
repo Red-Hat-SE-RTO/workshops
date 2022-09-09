@@ -68,10 +68,9 @@ token="eyJhbGciOiJIUz…RamQrAStW5FwYR6UhGBQ1v4Y"
 [galaxy_server.galaxy]
 url=https://galaxy.ansible.com
 ```
-<br><br>
-      > **Warning**
-      > 
-      > Tokens and urls will be different
+   > **Warning**
+   > 
+   > Tokens and urls will be different
   
 #### 2.3 - Define how you want your EE built
 
