@@ -24,8 +24,8 @@ These first few lab exercises will be exploring the command-line utilities of th
 
 - [ansible-navigator](https://github.com/ansible/ansible-navigator) - a command line utility and text-based user interface (TUI) for running and developing Ansible automation content.
 - [ansible-core](https://docs.ansible.com/core.html) - the base executable that provides the framework, language and functions that underpin the Ansible Automation Platform.  It also includes various cli tools like `ansible`, `ansible-playbook` and `ansible-doc`.  Ansible Core acts as the bridge between the upstream community with the free and open source Ansible and connects it to the downstream enterprise automation offering from Red Hat, the Ansible Automation Platform.
-- [Execution Environments](https://docs.ansible.com/automation-controller/latest/html/userguide/execution_environments.html) - not specifically covered in this workshop because the built-in Ansible Execution Environments already included all the Red Hat supported collections which includes all the collections we use for this workshop.  Execution Environments are container images that can be utilized as Ansible execution.
-- [ansible-builder](https://github.com/ansible/ansible-builder) - not specifically covered in this workshop, `ansible-builder` is a command line utility to automate the process of building Execution Environments.
+- [Execution Environments](https://docs.ansible.com/automation-controller/latest/html/userguide/execution_environments.html) - built-in Ansible Execution Environments already included all the Red Hat supported collections which includes all the collections we use for this workshop.  Execution Environments are container images that can be utilized for Ansible execution.
+- [ansible-builder](https://github.com/ansible/ansible-builder) - is a command line utility to automate the process of building Execution Environments.
 
 If you need more information on new Ansible Automation Platform components bookmark this landing page [https://red.ht/AAP-20](https://red.ht/AAP-20)
 
@@ -67,7 +67,7 @@ In this lab you work in a pre-configured lab environment. You will have access t
 
   ![login vs code](images/vscode_login.png)
 
-  - Open the `rhel-workshop` directory in Visual Studio Code:
+  - Open the `/home/student/` directory in Visual Studio Code:
 
 ### Step 2 - Using the Terminal
 
@@ -75,7 +75,7 @@ In this lab you work in a pre-configured lab environment. You will have access t
 
   ![picture of new terminal](images/vscode-new-terminal.png)
 
-Navigate to the `rhel-workshop` directory on the Ansible control node terminal.
+Navigate to the `rhel_90-workshop` directory on the Ansible control node terminal.
 
 ```bash
 [student@ansible-1 ~]$ cd ~/rhel-workshop/
@@ -96,7 +96,7 @@ Run the `ansible-navigator` command with the `images` argument to look at execut
 $ ansible-navigator images
 ```
 
-![ansible-navigator images](images/navigator-images.png)
+![ansible-navigator images](imagespodman_images.png)
 
 
 > Note: The output  you see might differ from the above output
