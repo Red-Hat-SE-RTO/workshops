@@ -54,19 +54,19 @@ We will need to use some Certified and Community collections to retrofit our Aut
     </tr>
     <tr>
       <td>GALAXY SERVER URL</td>
-      <td>Get from Your Instructor**</td>
+      <td>Get from Your Instructor</td>
     </tr>
     <tr>
       <td>Auth Server URL</td>
-      <td>Get from your Instructor**</td>
+      <td>Get from your Instructor</td>
     </tr>
     <tr>
       <td>API Token</td>
-      <td>Get from your Instructor**</td>
+      <td>Get from your Instructor</td>
     </tr>
   </table>
 
-* Click <strong>Save</strong>
+* Click **Save**
 
 ### Step 2 - Add Automation Hub credentials to Default Organization
 
