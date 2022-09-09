@@ -49,7 +49,7 @@ The ansible configuration file located in the ee project directory appropriately
 server_list = automation_hub, galaxy
 ```
 * Complete the **\[galaxy_server.automation_hub\]** **url**, **auth_url**, and **token** information:
-    * **\[galaxy_server.automation_hub\]**: gathered from console.redhat.com (in [Section 2/Exercise 1/Step 1](../2.1-evnironment-prep/README.md) of this workshop)<br>
+    * **\[galaxy_server.automation_hub\]**: gathered from console.redhat.com (in [Section 2/Exercise 1/Step 1](../2.1-evnironment-prep/README.md) of this workshop)<br><br>
       > **Warning**
       > 
       > Don't load token again, it will invalidate the token we set up in Automation Controller.
