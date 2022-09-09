@@ -29,6 +29,7 @@ Resources -> Credentials -> Add
 > 
 > Clicking **"Load token"** will generate a new token and previous tokens will be invalid
 
+* Fill out the form as follows:
 <table>
     <tr>
       <th>Parameter</th>
@@ -62,10 +63,10 @@ Resources -> Credentials -> Add
 
   \*\* One user with administrator access must retrieve these values from [console.redhat.com](https://console.redhat.com/ansible/automation-hub/token#) -> click **"Load token"**<br>
   \*\* Provide the resulting fields to the rest of the students
+
   ![ansible rhel lab diagram](images/automation_hub_token_info.png)
 
-
-Click <strong>Save</strong>
+* Click <strong>Save</strong>
 
 ### Step 2 - Add Automation Hub credentials to Default Organization
 
