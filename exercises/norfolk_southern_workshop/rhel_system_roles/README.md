@@ -1,4 +1,4 @@
-# Exercise 3.4 - Leveraging RHEL System Roles
+# Exercise 5 - Leveraging RHEL System Roles in AAP 2
 
 * [What are RHEL System Roles](#what-are-rhel-system-roles)
 * [Step 1 - Use System Roles Collection from Automation Hub](#Step-1:-Use-System-Roles-Collection-from-Automation-Hub)
