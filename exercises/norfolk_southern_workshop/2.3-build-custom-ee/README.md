@@ -46,7 +46,23 @@ The ansible configuration file located in the ee project directory appropriately
 * Edit **server_list** to list search precidence for collections.  Update your file as follows:<br>
 ```ini
 [galaxy]
+server_list = automation_hub, galaxy
+```
+* Complete the **\[galaxy_server.automation_hub\]** **url**, **auth_url**, and **token** information:
+    * \[galaxy_server.automation_hub\]: gathered at the beginning of (exercises 5.1.1)
+    * \[galaxy_server.galaxy\]: url=https://galaxy.ansible.com
+    * Example (tokens and urls will be different):<br>
+```ini
+[galaxy]
 server_list = automation_hub, private_automation_hub, galaxy
+ 
+[galaxy_server.automation_hub]
+url=https://console.redhat.com/api/automation-hub/content/6628941-synclist/
+auth_url=https://sso.redhat.com/auth/realms/redhat-external/protocol/openid-connect/token
+token="eyJhbGciOiJIUz…RamQrAStW5FwYR6UhGBQ1v4Y"
+ 
+[galaxy_server.galaxy]
+url=https://galaxy.ansible.com
 ```
 #### 2.3 - Define how you want your EE built
 
