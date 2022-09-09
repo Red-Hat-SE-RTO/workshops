@@ -49,9 +49,10 @@ The ansible configuration file located in the ee project directory appropriately
 server_list = automation_hub, galaxy
 ```
 * Complete the **\[galaxy_server.automation_hub\]** **url**, **auth_url**, and **token** information:
-    * \[galaxy_server.automation_hub\]: gathered at the beginning of (exercises 5.1.1)
-    * \[galaxy_server.galaxy\]: url=https://galaxy.ansible.com
-    * Example of finished ansible.cfg file (tokens and urls will be different):<br>
+    * **\[galaxy_server.automation_hub\]**: gathered at the beginning of (exercises 5.1.1)
+    * **\[galaxy_server.galaxy\]:** is already configured for you
+    * Final ansible.cfg file looks like:<br>
+    (NOTE: tokens and urls will be different):<br>
 ```ini
 [galaxy]
 server_list = automation_hub, private_automation_hub, galaxy
