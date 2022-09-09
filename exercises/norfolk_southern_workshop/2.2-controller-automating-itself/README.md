@@ -18,7 +18,7 @@ In order to do this we are using the concept of Configuration as Code.  The Red 
 
 * Copy the “Ansible Official Demo Project”:<br>
 **Resources** → **Projects** → Find **“Ansible Official Demo Project”** → Click the "2 Papers" icon (at the very end of the row)
-* Edit the copy of “Ansible Official Demo Project:<br>
+* Edit the copy "Ansible official demo project @ 00:00 PM":<br>
 Click the “Pencil” icon 
 * Update only the following fields:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<table>
@@ -41,7 +41,8 @@ Click the “Pencil” icon
   </table>
 
 * Click **Save** button<br>
-Wait for “Workshop Mod” to finish syncing (this will start automatically)
+* Wait for "Last Job Status" indicator to go from "Waiting" to "Succesful".<br>
+(You can also check the Project sync progress. Go to: **Views** -> **Jobs**)
 
 ### Step 2 - Run Job Template to add additional Projects and Job Templates
 
@@ -53,41 +54,43 @@ Wait for “Workshop Mod” to finish syncing (this will start automatically)
       <th>Value</th>
     </tr>
     <tr>
-      <td>Name:</td>
+      <td>NAME</td>
       <td>Workshop Setup</td>
     </tr>
     <tr>
-      <td>Inventory</td>
+      <td>INVENTORY</td>
       <td>Workshop Inventory</td>
     </tr>
     <tr>
-      <td>Project</td>
+      <td>PROJECT</td>
       <td>Workshop Mod</td>
     </tr>
     <tr>
-      <td>Exec Env:</td>
+      <td>EXECUTION ENVIRONMENT</td>
       <td>Control Plane Execution Environment</td>
     </tr>
     <tr>
-      <td>Playbook:</td>
+      <td>PLAYBOOK</td>
       <td>setup_demo.yml</td>
     </tr>
     <tr>
-      <td>Credentials</td>
-      <td>**Type**: Red Hat Ansible Automation Platform<br>**Name**: Controller Credential</td>
+      <td>CREDENTIALS</td>
+      <td><strong>Type</strong>: Red Hat Ansible Automation Platform<br><strong>Name</strong>: Controller Credential</td>
     </tr>
   <tr>
-      <td>Extra vars:</td>
+      <td>VARIABLES</td>
       <td>demo: linux</td>
   </tr>
 </table>
+
 * Click **Save** button
 * Click **Launch** button
 
 ### Step 3 - Verify New Job Templates that were automatically created
 
-* **Resources** -> **Templates**
-* Notice: about 10 additional “LINUX/..” job templates were created.  Each job template provides an example of additional ansible use cases that can be performed/executed.
+* Go to: **Resources** -> **Templates**
+* **Notice**: about 10 additional “LINUX/..” job templates were created.  Each job template provides an example of additional ansible use cases that can be performed/executed.<br>
+we will be using some of these templates in our next exercise.
 
 ----
 
