@@ -36,9 +36,18 @@ In exercise 2.2, the "LINUX / Setup Builder" job template was created.  Now we w
 ![folder navigation](images/select_folder.png)
 * Enter "/home/student/" and click ok<br>
 ![directory path](images/home_student_directory.png)
+* Start a terminal sesesion:<br>
+![start terminal](images/open_terminal.png)
 
 #### 2.2 - Tell builder where to look for collections
-
+The ansible configuration file located in the ee project directory appropriately named rhel_system_roles_ee, is where you define the sequence in which builder where search for collections when building the EE.
+* Open the execution_environments/rhel_system_roles_ee/ansible.cfg file:<br>
+![navigation to ansible.cfg](images/nav_to_ansible_config.png)
+* Edit **server_list** to list search precidence for collections.  Update your file as follows:<br>
+```yaml
+[galaxy]
+server_list = automation_hub, private_automation_hub, galaxy
+```
 #### 2.3 - Define how you want your EE built
 
 #### 2.4 - Add RHEL System Roles collection
