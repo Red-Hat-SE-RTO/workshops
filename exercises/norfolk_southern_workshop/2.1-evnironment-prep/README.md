@@ -70,6 +70,12 @@ We will need to use some Certified and Community collections to retrofit our Aut
 
 ### Step 2 - Add Automation Hub credentials to Default Organization
 
+* Add AH credentials to **Default** Organization in Automation Controller
+**Access** -> **Organizations** -> Click “**Default**” Organization -> **Edit** button -> Galaxy Credentials Magnifying Glass Icon (![images/magnifying_glass_icon.png]) -> Check “**Automation Hub**” -> click “**Select**” button -> click “**Save**” button
+
+Ensure “Automation Hub” is checked, then drag it into the 1st search location (at the top)
+Click “Select”
+Click “Save”
 
 "<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>"
 ## What are RHEL System Roles
