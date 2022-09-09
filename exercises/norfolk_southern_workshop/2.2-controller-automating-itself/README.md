@@ -90,7 +90,7 @@ Click the “Pencil” icon
 ### Step 3 - Verify New Job Templates that were automatically created
 
 * Go to: **Resources** -> **Templates**
-* **Notice**: about 10 additional “LINUX/..” job templates were created.  Each job template provides an example of additional ansible use cases that can be performed/executed.</br>
+* **Notice**: about 10 additional “LINUX/..” job templates were created.  Each job template provides an example of additional ansible use cases that can be performed/executed.<br><br>
 We will be using some of these templates in upcomming exercise.
 
 ----
