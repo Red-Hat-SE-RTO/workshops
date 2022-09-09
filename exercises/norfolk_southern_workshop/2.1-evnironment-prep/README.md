@@ -3,9 +3,8 @@
 ## Table of Contents
 
 * [Objective](#objective)
-* [Guide](#guide)
 * [Step 1 - Add Credentials for Automation Hub](#step-1---add-credentials-for-automation-hub)
-* [Step 2 - Listing Modules and Getting Help](#step-2---listing-modules-and-getting-help)
+* [Step 2 - Add Automation Hub credentials to Default Organization](#step-2---add-automation-hub-credentials-to-default-organization)
 
 ## Objective
 
@@ -68,7 +67,9 @@ Resources -> Credentials -> Add
 
 Click <strong>Save</strong>
 
-### 1.2 - Add credentials for Automation Hub
+### Step 2 - Add Automation Hub credentials to Default Organization
+
+
 "<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>"
 ## What are RHEL System Roles
 RHEL System Roles are a collection of Ansible roles and modules that can help automate the management and configuration of RHEL Systems. RHEL System Roles can help provide consistent and repeatable configuration, reduce technical burdens, and streamline administration.
