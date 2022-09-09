@@ -142,19 +142,8 @@ Note the following parameters within the `ansible-navigator.yml` file:
 
 For a full listing of every configurable knob checkout the [documentation](https://ansible-navigator.readthedocs.io/en/latest/settings/)
 
-### Step 5 - Challenge Labs
-
-You will soon discover that many chapters in this lab guide come with a "Challenge Lab" section. These labs are meant to give you a small task to solve using what you have learned so far. The solution of the task is shown underneath a warning sign.
 
 ---
 **Navigation**
 
-<br>
-
-{% if page.url contains 'ansible_rhel_90' %}
-[Next Exercise](../2-thebasics)
-{% else %}
-[Next Exercise](../1.2-thebasics)
-{% endif %}
-<br><br>
-[Click here to return to the Ansible for Red Hat Enterprise Linux Workshop](../README.md)
+[Click here to return to the Ansible for Red Hat Enterprise Linux Workshop Exercise Menu](../README.md)
