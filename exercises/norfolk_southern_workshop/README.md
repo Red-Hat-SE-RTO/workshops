@@ -1,10 +1,10 @@
-# Ansible Workshop - Ansible for Red Hat Enterprise Linux (90 mins)
+# Ansible Workshop - Ansible for Red Hat Enterprise Linux (AAP2 for Experienced Users)
 
 **Read this in other languages**:
 <br>![uk](../../images/uk.png) [English](README.md),  ![japan](../../images/japan.png)[日本語](README.ja.md)
 <br>
 
-If you’re new to Ansible Automation, but want a quicker version of the original RHEL workshop, this 90-minute workshop provides you with fewer exercises, focused on cloud provisioning, converting bash/shell commands to Ansible, all the way to utilizing RHEL System Roles.
+If you’re have been working with Ansible Automation Platform 1.2, and would like to get hands on experience with new features and technologies that come with AAP 2, this 4 hour workshop provides you with exercises for concepts such as Execution Environments, Ansible Navigator, Ansible Builder, and Automation Mesh.  You will also dive into some advanced topics such as automating controller with controller, Private Automation Hub as a container registry, working with execution environments in Automation Controller, and RHEL System Roles.
 
 **This is documentation for Ansible Automation Platform 2**
 
@@ -20,7 +20,7 @@ If you’re new to Ansible Automation, but want a quicker version of the origina
 
 The exercises are self explanatory and guide the participants through the entire lab. All concepts are explained when they are introduced.
 
-We will also provide any presentation slides we have delivered today.
+We will also provide any presentation slides we will be delivering today.
 
 Also have a look at our Ansible Best Practices Deck:
 [Ansible Best Practices](../../decks/ansible_best_practices.pdf)
