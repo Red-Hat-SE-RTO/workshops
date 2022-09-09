@@ -34,7 +34,7 @@ We will need to use some Certified and Community collections to retrofit our Aut
 ![automation controller login creds](images/ac_login_creds.png)
 * Go to: **Resources -> Credentials -> Add**
 
-* Fill out the form as follows:
+* Fill out the form as follows:<br>
 <table>
     <tr>
       <th>Parameter</th>
