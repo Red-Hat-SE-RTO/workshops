@@ -15,10 +15,17 @@
 
 ## Objective
 
-In exercise 2.2, the "LINUX / Setup Builder" job template was created.  Now we will execute this job template to build out and Ansible Builder environment on our controller node (**ansible-1** in **Workshop Inventory**). 
-
+In Exercise 3 from Section 1 of this workshop, you were able to do a deep dive into Ansible Builder.  But what happens after that?  You need to store your EE's where they can be shared and version controlled.  This time you will be creating your own custom EE in your personal workshop environment. From there you will push it to your very own Private Automation Hub.  Once you have your EE's in a container repository (such as PAH) you need to put it into production by adding it to your Automation Controller. 
 
 ### Step 1 - Run “LINUX / Setup Builder”
+
+In exercise 2.2, the "LINUX / Setup Builder" job template was created.  Now we will execute this job template to build out an Ansible Builder environment on our controller node (**ansible-1** in **Workshop Inventory**). 
+
+* Resources -> Templates -> LINUX / Setup Builder -> Launch
+    * Enter “ansible-1” for "Server Name or Pattern" in Survey
+    * Click **Next**
+    * Click **Launch**
+
 
 ### Step 2 - Create custom EE with RHEL System Roles collection
 
