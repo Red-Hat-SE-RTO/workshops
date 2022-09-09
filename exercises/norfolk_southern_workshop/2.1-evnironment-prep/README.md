@@ -19,15 +19,19 @@ We will need to use some Certified and Community collections to retrofit our Aut
 
 ### Step 1 - Add Credentials for Automation Hub
 
-Login as admin to your Automation Controller
-
-Resources -> Credentials -> Add
-
 > **Warning**
 >
 > Before proceeding, confirm that no other individuals or groups within your company have already generated a token for the hosted Automation Hub associated with your portal account at console.redhat.com.
 > 
 > Clicking **"Load token"** will generate a new token and previous tokens will be invalid
+
+  \*\* One user with administrator access must retrieve these values from [console.redhat.com](https://console.redhat.com/ansible/automation-hub/token#) -> click **"Load token"**<br>
+  \*\* Provide the resulting fields to the rest of the students
+
+  ![ansible rhel lab diagram](images/automation_hub_token_info.png)
+
+* Login as **admin** to your Automation Controller
+* Go to: **Resources -> Credentials -> Add**
 
 * Fill out the form as follows:
 <table>
@@ -60,11 +64,6 @@ Resources -> Credentials -> Add
       <td>Get from your Instructor**</td>
     </tr>
   </table>
-
-  \*\* One user with administrator access must retrieve these values from [console.redhat.com](https://console.redhat.com/ansible/automation-hub/token#) -> click **"Load token"**<br>
-  \*\* Provide the resulting fields to the rest of the students
-
-  ![ansible rhel lab diagram](images/automation_hub_token_info.png)
 
 * Click <strong>Save</strong>
 
