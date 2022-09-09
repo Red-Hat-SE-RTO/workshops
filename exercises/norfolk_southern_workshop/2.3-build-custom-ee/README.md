@@ -87,12 +87,16 @@ dependencies:
 #  python: requirements.txt
 #  system: bindep.txt
 ```
-
 * Add **build_arg_default:s** dictionary variable that defines options/specifications on how you would like to build the EE.
-    > **Tip**
-    >
-    > You can copy and paste the base image from your Private Automation Hub (shown below)
-![get minimal ee base image](images/get_minimal_base_image.png)
+```yaml
+build_arg_defaults:
+  EE_BASE_IMAGE: 'hub.XXXXXX.example.opentlc.com/ee-supported-rhel8:latest'
+```
+  > **Tip**
+  >
+  > You can copy and paste the base image from your Private Automation Hub (shown below)
+  > ![get minimal ee base image](images/get_minimal_base_image.png)
+  
 #### 2.4 - Add RHEL System Roles collection
 
 #### 2.5 - Pull down base image
