@@ -101,13 +101,15 @@ $ ansible-navigator images
 
 > Note: The output  you see might differ from the above output
 
-This command gives you information about all currently installed Execution Environments or EEs for short.  Investigate an EE by pressing the corresponding number.  For example pressing **2** with the above example will open the `ee-supported-rhel8` execution environment:
+This command gives you information about all currently installed Execution Environments or EEs for short.  Investigate an EE by pressing the corresponding number.  For example pressing **0** with the above example will open the `rhel_90_ee` execution environment:
 
 ![ee main menu](images/navigator-ee-menu.png)
 
 Selecting `2` for `Ansible version and collections` will show us all Ansible Collections installed on that particular EE, and the version of `ansible-core`:
 
 ![ee info](images/navigator-ee-collections.png)
+
+> Note: You can go back to previous TUI menu by pressing esc key, or exit TUI by typing ":q" or ":quit"
 
 ### Step 4 - Examining the ansible-navigator configuration
 
