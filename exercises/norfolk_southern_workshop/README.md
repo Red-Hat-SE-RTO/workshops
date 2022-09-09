@@ -35,7 +35,7 @@ This is a custom workshop and time may vary depending on questions and exposure 
 
 ## Ansible Automation Platform Exercises
 
- - [Exercise 1 - Overview of public cloud provisioning](1-setup)
+ - [Exercise 1 - Overview of public cloud provisioning](1-setup/README.md)
  - [Exercise 2 - Deep dive into Ansible Navigator](https://external.ink?to=/play.instruqt.com/embedv2/redhat/tracks/getting-started-ansible-navigator?token=em_gvby3leayr2ogdot)
  - [Exercise 3 - Building custom EE's with Ansible Builder](https://external.ink?to=/play.instruqt.com/embedv2/redhat/tracks/getting-started-ansible-builder?token=em_prdwsuxj78anshdl)
  - [Exercise 4 - Working in an Automation Mesh environment](https://external.ink?to=/play.instruqt.com/embed/redhat/tracks/getting-started-mesh?token=em_eGpRMNjJl3q9Lp7S&show_challenges=true)
