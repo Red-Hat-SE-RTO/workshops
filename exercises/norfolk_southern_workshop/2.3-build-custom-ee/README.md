@@ -3,7 +3,7 @@
 ## Table of Contents
 
 * [Objective](#objective)
-* [Step 1 - Run “LINUX / Setup Builder”](#step-1---run-linux--setup-builderr)
+* [Step 1 - Run “LINUX / Setup Builder”](#step-1---run-linux--setup-builder)
 * [Step 2 - Create custom Execution Environment with RHEL System Roles collection](#step-2---create-custom-ee-with-rhel-system-roles-collection)
     * [2.1 - Access Terminal](#21---access-terminal)
     * [2.2 - Tell builder where to look for collections](#22---tell-builder-where-to-look-for-collections)
