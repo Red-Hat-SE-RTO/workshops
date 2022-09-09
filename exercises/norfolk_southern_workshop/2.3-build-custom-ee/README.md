@@ -55,7 +55,11 @@ server_list = automation_hub, galaxy
       > Don't load token again, it will invalidate the token we set up in Automation Controller.
       > Use the token already generated
     * **\[galaxy_server.galaxy\]:** is already configured for you
-    * Final ansible.cfg file looks like:<br>
+    * Final ansible.cfg file looks like:<br><br>
+      > **Warning**
+      > 
+      > Tokens and urls will be different
+  
 ```ini
 [galaxy]
 server_list = automation_hub, galaxy
@@ -68,11 +72,26 @@ token="eyJhbGciOiJIUz…RamQrAStW5FwYR6UhGBQ1v4Y"
 [galaxy_server.galaxy]
 url=https://galaxy.ansible.com
 ```
-   > **Warning**
-   > 
-   > Tokens and urls will be different
-  
+
 #### 2.3 - Define how you want your EE built
+The **execution_environments.yml** file is located in the rhel_system_roles_ee project directory.  It defines how the EE will be built.
+* Add **version:** directive.  This is the first version of this EE, so we can start with 1.  If you later make changes to the container that will replace existing EE, you will use 2, and so on.  Versions do not have to be a number.
+```yaml
+—-
+version: 1
+```
+* Next, Add **dependencies:**. We are going to be installing this collection from a collection on a galaxy server.  To build build collections into EEs, you need to add the FQCN (Fully Qualified Collection Name) to the **requirements.yml** file. (note: packages are added to bindep.txt file and python dependencies are added to requirements.txt as shown in comment fields)
+```yaml
+dependencies:
+  galaxy: requirements.yml
+#  python: requirements.txt
+#  system: bindep.txt
+```
+> **Tip**
+>
+> You can copy and paste the base image from your Private Automation Hub (shown below)
+![get minimal ee base image](images/get_minimal_base_image.png)
+* Add **build_arg_default:s** dictionary variable that defines options/specifications on how you would like to build the EE.
 
 #### 2.4 - Add RHEL System Roles collection
 
