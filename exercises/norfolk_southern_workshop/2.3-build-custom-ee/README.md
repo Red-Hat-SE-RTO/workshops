@@ -55,11 +55,14 @@ server_list = automation_hub, galaxy
       > Don't load token again, it will invalidate the token we set up in Automation Controller.
       > Use the token already generated
     * **\[galaxy_server.galaxy\]:** is already configured for you
-    * Final ansible.cfg file looks like:<br>
-    (NOTE: tokens and urls will be different):<br>
+    * Final ansible.cfg file looks like:<br><br>
+      > **Warning**
+      > 
+      > Tokens and urls will be different
+  
 ```ini
 [galaxy]
-server_list = automation_hub, private_automation_hub, galaxy
+server_list = automation_hub, galaxy
  
 [galaxy_server.automation_hub]
 url="https://console.redhat.com/api/automation-hub/content/#######-synclist/"
