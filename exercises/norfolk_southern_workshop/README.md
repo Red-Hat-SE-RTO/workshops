@@ -6,8 +6,6 @@
 
 If you have been working with Ansible Automation Platform 1.2, and would like to get hands on experience with new features and technologies that come with AAP 2, this 4 hour workshop provides you with exercises for concepts such as Execution Environments, Ansible Navigator, Ansible Builder, and Automation Mesh.  You will also dive into some advanced topics such as automating controller with controller, Private Automation Hub as a container registry, working with execution environments in Automation Controller, and RHEL System Roles.
 
-**This is documentation for Ansible Automation Platform 2**
-
 ## Table of Contents
 
 * [Table of Contents](#table-of-contents)
@@ -42,10 +40,10 @@ This is a custom workshop and time may vary depending on questions and exposure 
 
 ## Section 2 - Putting it all together in Automation Controller
 
- - [Exercise 2.1 - Environment Prep](rhel_system_roles)
- - [Exercise 2.2 - Controller Automating Itself](rhel_system_roles)
- - [Exercise 2.3 - Build your Own Custom Execution Environment](rhel_system_roles)
- - [Exercise 2.4 - RHEL System Roles](rhel_system_roles)
+ - [Exercise 2.1 - Environment Prep](2.1-evnironment-prep/)
+ - [Exercise 2.2 - Controller Automating Itself](2.2-controller-automating-itself/)
+ - [Exercise 2.3 - Build your Own Custom Execution Environment](2.3-build-custom-ee/)
+ - [Exercise 2.4 - RHEL System Roles](2.4-rhel-system-roles)
 
 ## Section 3 - Supplemnetal Exercises
 
