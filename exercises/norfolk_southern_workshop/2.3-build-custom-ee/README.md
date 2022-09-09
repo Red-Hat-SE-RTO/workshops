@@ -55,11 +55,7 @@ server_list = automation_hub, galaxy
       > Don't load token again, it will invalidate the token we set up in Automation Controller.
       > Use the token already generated
     * **\[galaxy_server.galaxy\]:** is already configured for you
-    * Final ansible.cfg file looks like:<br><br>
-      > **Warning**
-      > 
-      > Tokens and urls will be different
-  
+    * Final ansible.cfg file looks like:<br>
 ```ini
 [galaxy]
 server_list = automation_hub, galaxy
@@ -72,6 +68,11 @@ token="eyJhbGciOiJIUz…RamQrAStW5FwYR6UhGBQ1v4Y"
 [galaxy_server.galaxy]
 url=https://galaxy.ansible.com
 ```
+<br><br>
+      > **Warning**
+      > 
+      > Tokens and urls will be different
+  
 #### 2.3 - Define how you want your EE built
 
 #### 2.4 - Add RHEL System Roles collection
