@@ -35,7 +35,7 @@ We will need to use some Certified and Community collections to retrofit our Aut
 * Go to: **Resources -> Credentials -> Add**
 
 * Fill out the form as follows:<br>
-<table>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<table>
     <tr>
       <th>Parameter</th>
       <th>Value</th>
