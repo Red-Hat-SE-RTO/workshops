@@ -21,15 +21,20 @@ In Exercise 3 from Section 1 of this workshop, you were able to do a deep dive i
 
 In exercise 2.2, the "LINUX / Setup Builder" job template was created.  Now we will execute this job template to build out an Ansible Builder environment on our controller node (**ansible-1** in **Workshop Inventory**). 
 
-* Resources -> Templates -> LINUX / Setup Builder -> Launch
-    * Enter “ansible-1” for "Server Name or Pattern" in Survey
+* Go to: **Resources** -> **Templates** -> launch **LINUX / Setup Builder**
+    * Enter **“ansible-1”** for "**Server Name or Pattern"** in Survey
     * Click **Next**
     * Click **Launch**
-
 
 ### Step 2 - Create custom EE with RHEL System Roles collection
 
 #### 2.1 - Access Terminal
+
+* Access Terminal on **ansible-1** through VSCode:<br>
+![vscode credentials](images/vscode_creds.png)
+* Open "/home/student/" folder: <br>
+![folder navigation](images/select_folder.png)
+![directory path](images/home_student_directory.png)
 
 #### 2.2 - Tell builder where to look for collections
 
