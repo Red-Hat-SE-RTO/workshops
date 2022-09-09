@@ -80,4 +80,4 @@ We will need to use some Certified and Community collections to retrofit our Aut
 
 ----
 
-[Click here to return to the Ansible for Red Hat Enterprise Linux Workshop Exercise Menu](../README.md)
+[Return to the Workshop Exercises](../README.md)

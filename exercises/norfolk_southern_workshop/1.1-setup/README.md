@@ -146,4 +146,4 @@ For a full listing of every configurable knob checkout the [documentation](https
 ---
 **Navigation**
 
-[Click here to return to the Ansible for Red Hat Enterprise Linux Workshop Exercise Menu](../README.md)
+[Return to the Workshop Exercises](../README.md)

@@ -27,15 +27,15 @@ Click the “Pencil” icon
       <th>Value</th>
     </tr>
     <tr>
-      <td>Name:</td>
+      <td>NAME</td>
       <td>Workshop Mod</td>
     </tr>
     <tr>
-      <td>Description</td>
+      <td>DESCRIPTION</td>
       <td>Adds AC objects necessary for additional exercises</td>
     </tr>
     <tr>
-      <td>Source Control URL</td>
+      <td>SOURCE CONTROL URL</td>
       <td>https://github.com/mkbredem/product-demos</td>
     </tr>
   </table>
@@ -95,4 +95,4 @@ We will be using some of these templates in upcomming exercise.
 
 ----
 
-[Click here to return to the Ansible for Red Hat Enterprise Linux Workshop Exercise Menu](../README.md)
+[Return to the Workshop Exercises](../README.md)
