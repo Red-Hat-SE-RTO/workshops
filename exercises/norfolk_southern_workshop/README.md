@@ -33,13 +33,22 @@ This is a custom workshop and time may vary depending on questions and exposure 
 
 ![ansible rhel lab diagram](../../images/rhel_lab_diagram.png)
 
-## Ansible Automation Platform Exercises
+## Section 1 - Introduction to AAP 2 (getting your feet wet)
 
- - [Exercise 1 - Overview of public cloud provisioning](1-setup/README.md)
- - [Exercise 2 - Deep dive into Ansible Navigator](https://external.ink?to=/play.instruqt.com/embedv2/redhat/tracks/getting-started-ansible-navigator?token=em_gvby3leayr2ogdot)
- - [Exercise 3 - Building custom EE's with Ansible Builder](https://external.ink?to=/play.instruqt.com/embedv2/redhat/tracks/getting-started-ansible-builder?token=em_prdwsuxj78anshdl)
- - [Exercise 4 - Working in an Automation Mesh environment](https://external.ink?to=/play.instruqt.com/embed/redhat/tracks/getting-started-mesh?token=em_eGpRMNjJl3q9Lp7S&show_challenges=true)
- - [Exercise 5 - System roles for RHEL in AAP2](rhel_system_roles)
+ - [Exercise 1.1 - Overview of public cloud provisioning](1.1-setup/README.md)
+ - [Exercise 1.2 - Deep dive into Ansible Navigator](https://external.ink?to=/play.instruqt.com/embedv2/redhat/tracks/getting-started-ansible-navigator?token=em_gvby3leayr2ogdot)
+ - [Exercise 1.3 - Building custom EE's with Ansible Builder](https://external.ink?to=/play.instruqt.com/embedv2/redhat/tracks/getting-started-ansible-builder?token=em_prdwsuxj78anshdl)
+ - [Exercise 1.4 - Working in an Automation Mesh environment](https://external.ink?to=/play.instruqt.com/embed/redhat/tracks/getting-started-mesh?token=em_eGpRMNjJl3q9Lp7S&show_challenges=true)
+
+## Section 2 - Putting it all together in Automation Controller
+
+ - [Exercise 2.1 - Environment Prep](rhel_system_roles)
+ - [Exercise 2.2 - Controller Automating Itself](rhel_system_roles)
+ - [Exercise 2.3 - Build your Own Custom Execution Environment](rhel_system_roles)
+ - [Exercise 2.4 - RHEL System Roles](rhel_system_roles)
+
+## Section 3 - Supplemnetal Exercises
+
  - [Exercise 6 - ServiceNow integration with AAP](https://external.ink?to=/play.instruqt.com/embed/redhat/tracks/getting-started-servicenow-automation?token=em_5ktpLJWtzpbqcDyM&show_challenges=true)
  
 
