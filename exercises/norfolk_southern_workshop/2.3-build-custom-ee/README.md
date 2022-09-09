@@ -44,7 +44,7 @@ The ansible configuration file located in the ee project directory appropriately
 * Open the execution_environments/rhel_system_roles_ee/ansible.cfg file:<br>
 ![navigation to ansible.cfg](images/nav_to_ansible_config.png)
 * Edit **server_list** to list search precidence for collections.  Update your file as follows:<br>
-```yaml
+```ini
 [galaxy]
 server_list = automation_hub, private_automation_hub, galaxy
 ```
