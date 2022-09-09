@@ -34,6 +34,7 @@ In exercise 2.2, the "LINUX / Setup Builder" job template was created.  Now we w
 ![vscode credentials](images/vscode_creds.png)
 * Open "/home/student/" folder: <br>
 ![folder navigation](images/select_folder.png)
+* Enter "/home/student/" and click ok<br>
 ![directory path](images/home_student_directory.png)
 
 #### 2.2 - Tell builder where to look for collections
