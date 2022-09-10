@@ -75,7 +75,7 @@ Click the “Pencil” icon
     </tr>
     <tr>
       <td>CREDENTIALS</td>
-      <td><strong>Type</strong>: Red Hat Ansible Automation Platform<br><strong>Name</strong>: Controller Credential</td>
+      <td><strong>Selected Category</strong>: Red Hat Ansible Automation Platform<br><strong>Name</strong>: Controller Credential</td>
     </tr>
   <tr>
       <td>VARIABLES</td>
