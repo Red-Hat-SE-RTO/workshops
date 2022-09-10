@@ -162,89 +162,13 @@ Your rhel_system_roles_ee project is now fully configured and ready to build
 ```bash
 $ ansible-builder build -v3 -t hub.<workshop_id>.example.opentlc.com/student#_rhel_system_roles_ee
 ```
-> ***Tip***
+> ***Warning***
 > 
 > Be sure to replace **student#** with your student number
 > We are all sharing the same private automation hub.  This will allow each student to determine which EE is theirs.
 
 #### 2.7 - Add EE to Automation Controller
 
-* Copy the “Ansible Official Demo Project”:<br>
-**Resources** → **Projects** → Find **“Ansible Official Demo Project”** → Click the "2 Papers" icon (at the very end of the row)
-* Edit the copy "Ansible official demo project @ 00:00 PM":<br>
-Click the “Pencil” icon 
-* Update only the following fields:
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<table>
-    <tr>
-      <th>Field</th>
-      <th>Value</th>
-    </tr>
-    <tr>
-      <td>NAME</td>
-      <td>Workshop Mod</td>
-    </tr>
-    <tr>
-      <td>DESCRIPTION</td>
-      <td>Adds AC objects necessary for additional exercises</td>
-    </tr>
-    <tr>
-      <td>SOURCE CONTROL URL</td>
-      <td>https://github.com/mkbredem/product-demos</td>
-    </tr>
-  </table>
-
-* Click **Save** button<br>
-* Wait for "Last Job Status" indicator to go from "Waiting" to "Succesful".<br>
-(You can also check the Project sync progress. Go to: **Views** -> **Jobs**)
-
-### Step 2 - Run Job Template to add additional Projects and Job Templates
-
-* Go to: **Resources** -> **Templates** -> **Add** -> **Add job template**<br>
-* Fill out Job Template as follows:
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<table>
-    <tr>
-      <th>Field</th>
-      <th>Value</th>
-    </tr>
-    <tr>
-      <td>NAME</td>
-      <td>Workshop Setup</td>
-    </tr>
-    <tr>
-      <td>INVENTORY</td>
-      <td>Workshop Inventory</td>
-    </tr>
-    <tr>
-      <td>PROJECT</td>
-      <td>Workshop Mod</td>
-    </tr>
-    <tr>
-      <td>EXECUTION ENVIRONMENT</td>
-      <td>Control Plane Execution Environment</td>
-    </tr>
-    <tr>
-      <td>PLAYBOOK</td>
-      <td>setup_demo.yml</td>
-    </tr>
-    <tr>
-      <td>CREDENTIALS</td>
-      <td><strong>Type</strong>: Red Hat Ansible Automation Platform<br><strong>Name</strong>: Controller Credential</td>
-    </tr>
-  <tr>
-      <td>VARIABLES</td>
-      <td>demo: linux</td>
-  </tr>
-</table>
-
-* Click **Save** button
-* Click **Launch** button
-* Review output while tasks complete
-
-### Step 3 - Verify New Job Templates that were automatically created
-
-* Go to: **Resources** -> **Templates**
-* **Notice**: about 10 additional “LINUX/..” job templates were created.  Each job template provides an example of additional ansible use cases that can be performed/executed.<br><br>
-We will be using some of these templates in upcomming exercise.
 
 ----
 
