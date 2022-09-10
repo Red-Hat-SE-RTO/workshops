@@ -178,10 +178,80 @@ quay.io/acme_corp/rhel_90_ee                                             latest 
 registry.redhat.io/ansible-automation-platform-22/ansible-builder-rhel8  latest      5ecec8a14fbc  3 weeks ago    311 MB
 hub.rh4ccb.example.opentlc.com/ee-minimal-rhel8                          latest      322f68e2af37  5 months ago   394 MB
 ```
-
+* Finally, let's push the EE to our shared Private Automation Hub:
+```bash
+$ podman push hub.XXXXXX.example.opentlc.com/student#_rhel_system_roles_ee --tls-verify=false
+```
 #### 2.7 - Add EE to Automation Controller
+Now the same execution environment can be used on ansible navigator on your workstation during developement of playbooks as well as in Automation Controller in production.  So, let's add it to our Automation Controller in our labs
+* First, add credentials so Controller can retrieve the EE from Private Automation Hub:<br>
+Go to: **Resources** -> **Credentials** -> **Add** -> Complete the form as follows:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<table>
+    <tr>
+      <th>Field</th>
+      <th>Value</th>
+    </tr>
+    <tr>
+      <td>NAME</td>
+      <td>Private Automation Hub Credential</td>
+    </tr>
+    <tr>
+      <td>ORGANIZATION</td>
+      <td>Default</td>
+    </tr>
+    <tr>
+      <td>CREDENTIAL TYPE</td>
+      <td>Container Registry</td>
+    </tr>
+    <tr>
+      <td>AUTHENTICATION URL</td>
+      <td>**PAH FQDN**</td>
+    </tr>
+    <tr>
+      <td>USERNAME</td>
+      <td>admin</td>
+    </tr>
+    <tr>
+      <td>PASSWORD OR TOKEN</td>
+      <td>**Student Credentials**</td>
+    </tr>
+  <tr>
+      <td>VERIFY SSL</td>
+      <td>Disabled</td>
+  </tr>
+</table>
 
+* Add the new execution environment to Automation Controller<br>
+Go to: **Administration** -> **Execution Environments** -> **Add** -> Complete form as follows:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<table>
+    <tr>
+      <th>Field</th>
+      <th>Value</th>
+    </tr>
+    <tr>
+      <td>NAME</td>
+      <td>Private Automation Hub Credential</td>
+    </tr>
+    <tr>
+      <td>IMAGE</td>
+      <td>**copy and paste from automation hub** (see image below)</td>
+    </tr>
+    <tr>
+      <td>PULL</td>
+      <td>Always pull container before running</td>
+    </tr>
+    <tr>
+      <td>ORGANIZATION</td>
+      <td>Default</td>
+    </tr>
+    <tr>
+      <td>REGISTRY CREDENTIAL</td>
+      <td>Private Automation Hub Credential</td>
+    </tr>
+</table>
 
+![custom ee image location](images/custome_ee_pull_location.png)
+* Click **Save**
 ----
 
 [Return to the Workshop Exercises](../README.md)
