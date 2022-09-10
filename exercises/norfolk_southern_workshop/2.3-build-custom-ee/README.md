@@ -135,12 +135,12 @@ collections:
 Your PAH for this lab is already provisioned with the 3 AAP supported container images that can be used as a base image.  The recommended practice for building custom EE's is to start with the ee-minimal-rhel8.  Some collections' dependencies may conflict with other collections' dependencies.  Starting with a minimal environment will minimize this occurance.
 * In the terminal window of Visual Studio code:
 ```bash
-$ cd /home/student/execution_environments/rhel_system_roles
+$ cd /home/student/execution_environments//rhel_system_roles_ee/
 $ podman login -u=admin -p=<UPDATE> hub.XXXXXX.example.opentlc.com --tls-verify=false
 ```
 * Copy and paste the pull command for the ee-minimal-rhel8 container image, located on your PAH:
 ```bash
-podman pull hub.XXXXXX.example.opentlc.com/ee-minimal-rhel8:latest
+podman pull hub.XXXXXX.example.opentlc.com/ee-minimal-rhel8:latest --tls-verify=false
 ```
 * Update **unqualified-search-registries** list with the FQDN of your PAH server:
 ```shell
@@ -148,12 +148,20 @@ $ sudo vi /etc/containers/registries.conf
 ```
 * find and update **unqualified-search-registries** as follows:
 ```conf
-unqualified-search-registries = [“hub.rh0fe3.example.opentlc.com”, "registry.access.redhat.com", "registry.redhat.io", "docker.io"]
+unqualified-search-registries = [“hub.XXXXXX.example.opentlc.com”, "registry.access.redhat.com", "registry.redhat.io", "docker.io"]
 ```
 * Be sure to save ":wq"
 
-
 #### 2.6 - Build EE
+Your rhel_system_roles_ee project is now fully configured and ready to build
+* Build the EE by running the following command in the rhel_system_roles_ee directory of your terminal:
+```bash
+$ ansible-builder build -v3 -t hub.<workshop_id>.example.opentlc.com/student#_rhel_system_roles_ee
+```
+> ***Tip***
+> 
+> Be sure to replace **student#** with your student number
+> We are all sharing the same private automation hub.  This will allow each student to determine which EE is theirs.
 
 #### 2.7 - Add EE to Automation Controller
 
