@@ -1,4 +1,4 @@
-# Exercise 2.1 - Environment Prep
+# Exercise 2.1 - Environment Prep (5-10 minutes)
 
 ## Table of Contents
 
