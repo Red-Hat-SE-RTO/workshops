@@ -219,7 +219,7 @@ Go to: **Resources** -> **Credentials** -> **Add** -> Complete the form as follo
       <td>VERIFY SSL</td>
       <td>Disabled</td>
   </tr>
-</table>
+</table></br>
 
 * Add the new execution environment to Automation Controller<br>
 Go to: **Administration** -> **Execution Environments** -> **Add** -> Complete form as follows:
