@@ -27,6 +27,7 @@ In exercise 2.2, the "LINUX / Setup Builder" job template was created.  Now we w
     * Click **Launch**
 
 ### Step 2 - Create custom EE with RHEL System Roles collection
+By running **Linux / Setup Builder**, we installed Ansible Builder on our control node.  So let's get to our ansible-1 (control node) terminal and finish configuring how we want our custom execution environment built, build the EE, push it to PAH, then pull it into Automation Controller from the PAH.
 
 #### 2.1 - Access Terminal
 
