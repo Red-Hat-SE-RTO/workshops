@@ -96,7 +96,7 @@ build_arg_defaults:
   >
   > You can copy and paste the base image from your Private Automation Hub (shown below)
   > ![get minimal ee base image](images/get_minimal_base_image.png)
-* Finally, you need to tell builder where your ansible.cfg file is.  Best practice is for it to be in your ee project directory.  Append the following line to the end of your ansible.cfg file:
+* Finally, you need to tell builder where your ansible.cfg file is.  Best practice is for it to be in your ee project directory.  Append the following line to the end of your execution_environment.yml file:
 ```bash
 ansible_config: ansible.cfg
 ```
@@ -139,7 +139,7 @@ collections:
 Your PAH for this lab is already provisioned with the 3 AAP supported container images that can be used as a base image.  The recommended practice for building custom EE's is to start with the ee-minimal-rhel8.  Some collections' dependencies may conflict with other collections' dependencies.  Starting with a minimal environment will minimize this occurance.
 * In the terminal window of Visual Studio code:
 ```bash
-$ cd /home/student/execution_environments//rhel_system_roles_ee/
+$ cd /home/student/execution_environments/rhel_system_roles_ee/
 $ podman login -u=admin -p=<UPDATE> hub.XXXXXX.example.opentlc.com --tls-verify=false
 ```
 * Copy and paste the pull command for the ee-minimal-rhel8 container image, located on your PAH:
@@ -152,7 +152,7 @@ $ sudo vi /etc/containers/registries.conf
 ```
 * find and update **unqualified-search-registries** as follows:
 ```bash
-unqualified-search-registries = ["hub.rh4ccb.example.opentlc.com", "registry.access.redhat.com", "registry.redhat.io", "docker.io"]
+unqualified-search-registries = ["hub.XXXXXX.example.opentlc.com", "registry.access.redhat.com", "registry.redhat.io", "docker.io"]
 ```
 * Be sure to save ":wq"
 

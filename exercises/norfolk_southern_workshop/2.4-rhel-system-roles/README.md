@@ -4,8 +4,8 @@
 
 * [Objective](#objective)
 * [What Are Rhel System Roles](#step-1---run-linux--setup-builder)
-* [Step 1 - Create custom Execution Environment with RHEL System Roles collection](#step-2---create-custom-ee-with-rhel-system-roles-collection)
-* [Step 2 - Create custom Execution Environment with RHEL System Roles collection](#step-2---create-custom-ee-with-rhel-system-roles-collection)
+* [Step 1 - Use the timesync rhel system role](#step-2---create-custom-ee-with-rhel-system-roles-collection)
+* [Step 2 - Use the firewall rhel system role](#step-2---create-custom-ee-with-rhel-system-roles-collection)
 
 ## Objective
 
@@ -93,13 +93,14 @@ For an up-to-date list of available roles, as well as a support matrix that deta
    system_roles:
      - timesync
    timesync_ntp_servers:
-     - hostname: “<IP of Ansible-1:  you can pull from “Workshop Inventory -> hosts -> Ansible-1>”
+     - hostname: “<IP of Ansible-1:  #you can pull from “Workshop Inventory -> hosts -> Ansible-1>”
        iburst: true
    ip_protocol: chronyd
-```
+  ```
 
 
 ## Step 2 - 
+
 ----
 
 [Return to the Workshop Exercises](../README.md)
