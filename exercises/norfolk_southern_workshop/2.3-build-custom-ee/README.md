@@ -231,7 +231,7 @@ Go to: **Administration** -> **Execution Environments** -> **Add** -> Complete f
     </tr>
     <tr>
       <td>NAME</td>
-      <td>Private Automation Hub Credential</td>
+      <td>rhel_system_role_ee</td>
     </tr>
     <tr>
       <td>IMAGE</td>
