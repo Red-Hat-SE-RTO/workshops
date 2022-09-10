@@ -147,8 +147,8 @@ podman pull hub.XXXXXX.example.opentlc.com/ee-minimal-rhel8:latest --tls-verify=
 $ sudo vi /etc/containers/registries.conf
 ```
 * find and update **unqualified-search-registries** as follows:
-```conf
-unqualified-search-registries = [“hub.XXXXXX.example.opentlc.com”, "registry.access.redhat.com", "registry.redhat.io", "docker.io"]
+```bash
+unqualified-search-registries = ["hub.rh4ccb.example.opentlc.com", "registry.access.redhat.com", "registry.redhat.io", "docker.io"]
 ```
 * Be sure to save ":wq"
 
