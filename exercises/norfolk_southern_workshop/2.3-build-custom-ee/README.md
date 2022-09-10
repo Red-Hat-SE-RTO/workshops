@@ -90,16 +90,68 @@ dependencies:
 * Add **build_arg_default:s** dictionary variable that defines options/specifications on how you would like to build the EE.
 ```yaml
 build_arg_defaults:
-  EE_BASE_IMAGE: 'hub.XXXXXX.example.opentlc.com/ee-supported-rhel8:latest'
+  EE_BASE_IMAGE: 'hub.XXXXXX.example.opentlc.com/ee-minimal-rhel8:latest'
 ```
   > **Tip**
   >
   > You can copy and paste the base image from your Private Automation Hub (shown below)
   > ![get minimal ee base image](images/get_minimal_base_image.png)
-  
+* You could optionally add commands you would like to run inside the container image before it is built and after it is built. (EXAMPLE ONLY:)
+```yaml
+#additional_build_steps:
+#  prepend: |
+#    RUN whoami
+#    RUN cat /etc/os-release
+#  append:
+#    - RUN dnf install -y rhel-system-roles
+#    - RUN ls -la /etc
+```
+* Here is an example of what your execution_environment.yml would look like for this exercise:
+```yaml
+---
+version: 1
+
+dependencies:
+ galaxy: requirements.yml
+# python: requirements.txt
+# system: bindep.txt 
+ 
+build_arg_defaults:
+ EE_BASE_IMAGE: 'hub.XXXXXX.example.opentlc.com/ee-minimal-rhel8:latest'
+
+ansible_config: ansible.cfg
+```
+
 #### 2.4 - Add RHEL System Roles collection
+As stated earlier, if you are adding a collection to your EE from a galaxy server (AH, PAH, and/or Galaxy), it must be listed in the requirements.yml file in your rhel_system_roles_ee project directory.
+* Edit your requirements.yml file as follows:
+```yaml
+---
+collections:
+  - name: redhat.rhel_system_roles
+```
 
 #### 2.5 - Pull down base image
+Your PAH for this lab is already provisioned with the 3 AAP supported container images that can be used as a base image.  The recommended practice for building custom EE's is to start with the ee-minimal-rhel8.  Some collections' dependencies may conflict with other collections' dependencies.  Starting with a minimal environment will minimize this occurance.
+* In the terminal window of Visual Studio code:
+```bash
+$ cd /home/student/execution_environments/rhel_system_roles
+$ podman login -u=admin -p=<UPDATE> hub.XXXXXX.example.opentlc.com --tls-verify=false
+```
+* Copy and paste the pull command for the ee-minimal-rhel8 container image, located on your PAH:
+```bash
+podman pull hub.XXXXXX.example.opentlc.com/ee-minimal-rhel8:latest
+```
+* Update **unqualified-search-registries** list with the FQDN of your PAH server:
+```shell
+$ sudo vi /etc/containers/registries.conf
+```
+* find and update **unqualified-search-registries** as follows:
+```conf
+unqualified-search-registries = [“hub.rh0fe3.example.opentlc.com”, "registry.access.redhat.com", "registry.redhat.io", "docker.io"]
+```
+* Be sure to save ":wq"
+
 
 #### 2.6 - Build EE
 
