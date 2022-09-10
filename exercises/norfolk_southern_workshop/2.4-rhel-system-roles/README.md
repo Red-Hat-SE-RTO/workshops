@@ -82,6 +82,23 @@ For an up-to-date list of available roles, as well as a support matrix that deta
         bash-4.4# less /usr/share/ansible/collections/ansible_collections/redhat/rhel_system_roles/docs/README_timesync.md
         ```
 
+* Now that we understand what values we can pass to timesync role, let's set our ansible-1 server (not practical) as the ntp server using chronyc as the ip protocol.
+   * update **Linux / System Roles** job template with the new EE<br>
+   (TIP: rhel_system_role_ee - may be on second page)
+   ![linux system role jt with ee](images/linux_system_role_jt_with_ee.png)
+   * Add the following extra vars, defined by the role<br>
+   (EXCEPTION: system_roles: \[timesync\]) is a list variable used to iterate through multiple roles in one run)
+   ```yaml
+   ---
+   system_roles:
+     - timesync
+   timesync_ntp_servers:
+     - hostname: “<IP of Ansible-1:  you can pull from “Workshop Inventory -> hosts -> Ansible-1>”
+       iburst: true
+   ip_protocol: chronyd
+```
+
+
 ## Step 2 - 
 ----
 
