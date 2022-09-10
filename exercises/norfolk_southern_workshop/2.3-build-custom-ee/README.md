@@ -166,6 +166,18 @@ $ ansible-builder build -v3 -t hub.<workshop_id>.example.opentlc.com/student#_rh
 > 
 > Be sure to replace **student#** with your student number
 > We are all sharing the same private automation hub.  This will allow each student to determine which EE is theirs.
+* Verify you newly created EE locally:
+```bash
+[student@ansible-1 rhel_system_roles_ee]$ podman images
+REPOSITORY                                                               TAG         IMAGE ID      CREATED        SIZE
+hub.rh4ccb.example.opentlc.com/student1_rhel_system_roles_ee             latest      f7c20a3a3d16  4 minutes ago  612 MB
+<none>                                                                   <none>      71ef3cf76d22  4 minutes ago  352 MB
+<none>                                                                   <none>      3fb74eea7c51  4 minutes ago  400 MB
+<none>                                                                   <none>      86eb3ae1447e  7 minutes ago  394 MB
+quay.io/acme_corp/rhel_90_ee                                             latest      198e77b65e41  6 days ago     1.64 GB
+registry.redhat.io/ansible-automation-platform-22/ansible-builder-rhel8  latest      5ecec8a14fbc  3 weeks ago    311 MB
+hub.rh4ccb.example.opentlc.com/ee-minimal-rhel8                          latest      322f68e2af37  5 months ago   394 MB
+```
 
 #### 2.7 - Add EE to Automation Controller
 
