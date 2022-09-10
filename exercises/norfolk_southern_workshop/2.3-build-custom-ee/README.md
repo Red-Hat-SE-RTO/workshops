@@ -96,6 +96,10 @@ build_arg_defaults:
   >
   > You can copy and paste the base image from your Private Automation Hub (shown below)
   > ![get minimal ee base image](images/get_minimal_base_image.png)
+* Finally, you need to tell builder where your ansible.cfg file is.  Best practice is for it to be in your ee project directory.  Append the following line to the end of your ansible.cfg file:
+```bash
+ansible_config: ansible.cfg
+```
 * You could optionally add commands you would like to run inside the container image before it is built and after it is built. (EXAMPLE ONLY:)
 ```yaml
 #additional_build_steps:
