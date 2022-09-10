@@ -41,7 +41,7 @@ By running **Linux / Setup Builder**, we installed Ansible Builder on our contro
 ![start terminal](images/open_terminal.png)
 
 #### 2.2 - Tell builder where to look for collections
-Each customer exeuction environment should be built from it's own project directory.  The project directory for your custom ee is called **rhel_system_roles_ee**.  The EE project directory contains all the configuration files needed to define how yoru container is built; like where to search for collections and in what order. 
+Each customer exeuction environment should be built from it's own project directory.  The project directory for your custom ee is called **rhel_system_roles_ee**.  The EE project directory contains all the configuration files needed to define how your container is built; like where to search for collections and in what order. 
 * Open the execution_environments/rhel_system_roles_ee/ansible.cfg file:<br>
 ![navigation to ansible.cfg](images/nav_to_ansible_config.png)
 * Edit **server_list** to list search precidence for collections.  Update your file as follows:<br>
