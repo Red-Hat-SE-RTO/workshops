@@ -43,9 +43,9 @@ For an up-to-date list of available roles, as well as a support matrix that deta
 
 ## Step 1 - Use the **timesync** rhel system role
 * Learn more about the timesync system roles.  What is its purpose?  What are the variable options that can define how your environment gets configured?
-    * Option1: read the docs online:<br>
+    * **Option1**: read the docs online:<br>
     [timesync/README.md](https://external.ink?to=/github.com/linux-system-roles/timesync/blob/master/README.md)
-    * Option2: If you are feeling frisky, read the docs from the collection inside the container we just created.
+    * **Option2**: If you are feeling frisky, read the docs from the collection inside the container we just created.
         * From ansible-1, find the container image:
         ```bash
         $ podman images
@@ -54,8 +54,10 @@ For an up-to-date list of available roles, as well as a support matrix that deta
         ```
         * Open an interactive terminal inside the container and find out where the collection was installed:
         ```bash
-        bash-4.4# podman run --name rhel_roles -it hub.rh4ccb.example.opentlc.com/student1_rhel_system_roles_ee /bin/bash
+        $ podman run --name rhel_roles -it hub.rh4ccb.example.opentlc.com/student1_rhel_system_roles_ee /bin/bash
         bash-4.4# ansible-galaxy collection list
+        
+        # /usr/share/ansible/collections/ansible_collections
         Collection               Version
         ------------------------ -------
         redhat.rhel_system_roles 1.20.0 
