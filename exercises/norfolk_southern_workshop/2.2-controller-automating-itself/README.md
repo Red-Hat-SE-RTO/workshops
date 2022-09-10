@@ -85,7 +85,8 @@ Click the “Pencil” icon
 
 * Click **Save** button
 * Click **Launch** button
-* Review output while tasks complete
+* Review output while tasks complete<br>
+(Notice: This job template is installing all the Projects, Credential Types, Credentials, and Inventory Sources that are needed when building out the Job Templates at the end of the play run.
 
 ### Step 3 - Verify New Job Templates that were automatically created
 
