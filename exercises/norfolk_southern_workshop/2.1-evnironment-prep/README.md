@@ -8,13 +8,13 @@
 
 ## Objective
 
-This lab environment was not originally designed and configured to build custom EE’s so we will use Ansible automation to install and partially configure the Ansible Builder environment.
+This lab environment was not originally designed and configured to build custom EE’s so we will use Ansible automation to install and partially configure the Ansible Builder execution environment, and you will finish the configuration.
 
 We will need to use some Certified and Community collections to retrofit our Automation Controllers.  When we run a job template from a project with the requirements.yml file, it will pull the collections down from the Red Hat hosted Automation Hub.
 
 > **Tip**
 >
-> Not all collections have to be installed in containers, however, it is recommended to leverage the benefits stated earlier.  For this scenario, we will install some collections in a requirements.yml file in the project because we don’t have an EE yet with all the collections necessary to do so.  
+> Not all collections have to be installed in containers, however, it is recommended to leverage the benefits stated earlier.  For this scenario, we will install some collections in a requirements.yml file in the project because we don’t have an EE yet with all the collections needed to finish building out our automation controller and installing Ansible Builder.  
 
 
 ### Step 1 - Add Credentials for Automation Hub
