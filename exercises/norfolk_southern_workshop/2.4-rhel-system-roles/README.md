@@ -97,10 +97,26 @@ For an up-to-date list of available roles, as well as a support matrix that deta
        iburst: true
    ip_protocol: chronyd
   ```
+* Ensure “privilege escalation” is checked
+* Click “Save” -> Click “Next” -> * Click “Launch”
+* Enter **“node*”** for host pattern
+You will now see some output that will show you the tasks that were skipped and tasks that stayed the same, and tasks that made a change.  For the tasks that changed it will give you a glimpse as to what configuration file was changed and the setting that was added or taken away. 
+* 
+run adhoc commands in AC to review settings
+Inventory
+Select node1-3
+Run Command
+Module: command
+Arguments: chronyc sources -v
+Enable Privlege Escalation: enabled
+Click: Next
+Select “rhel_system_role_ee” -> Click “Next”
+Select “Workshop Credential” -> Click “next”
+Click “Launch”
 
 ## Step 2 - Use the **firewall** RHEL system role
 * Learn more about the [**firewall system role**](https://external.ink?to=/github.com/linux-system-roles/firewall).  What is its purpose?  What are the [**variable options**](https://external.ink?to=/github.com/linux-system-roles/firewall#examples-of-options) that can define how you configure firewalld?
-* Now that we have a better understanding on how to use the firewall rhel system role, let's up it into practice:
+* Now that we have a better understanding on how to use the firewall rhel system role, let's put it into practice:
    * Update the same **Linux / System Roles** job template from step 1 with the following extra vars:<br>
    (NOTE: system_roles: \[firewall\]) key/value is updated to indicate which RHEL system role we intend to use.)
    ```yaml
