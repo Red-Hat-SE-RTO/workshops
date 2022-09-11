@@ -47,7 +47,7 @@ This is a custom workshop and time may vary depending on questions and exposure 
 
 ## Section 3 - Supplemnetal Exercises
 
- - [Exercise 6 - ServiceNow integration with AAP](https://external.ink?to=/play.instruqt.com/embed/redhat/tracks/getting-started-servicenow-automation?token=em_5ktpLJWtzpbqcDyM&show_challenges=true)
+ - [Exercise 3 - ServiceNow integration with AAP (optional)](https://external.ink?to=/play.instruqt.com/embed/redhat/tracks/getting-started-servicenow-automation?token=em_5ktpLJWtzpbqcDyM&show_challenges=true)
  
 
 ---
