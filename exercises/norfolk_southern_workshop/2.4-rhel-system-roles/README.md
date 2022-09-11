@@ -4,8 +4,8 @@
 
 * [Objective](#objective)
 * [What Are Rhel System Roles](#step-1---run-linux--setup-builder)
-* [Step 1 - Use the timesync rhel system role](#step-2---create-custom-ee-with-rhel-system-roles-collection)
-* [Step 2 - Use the firewall rhel system role](#step-2---create-custom-ee-with-rhel-system-roles-collection)
+* [Step 1 - Use the timesync RHEL system role](#step-2---create-custom-ee-with-rhel-system-roles-collection)
+* [Step 2 - Use the firewall RHEL system role](#step-2---create-custom-ee-with-rhel-system-roles-collection)
 
 ## Objective
 
@@ -98,8 +98,25 @@ For an up-to-date list of available roles, as well as a support matrix that deta
    ip_protocol: chronyd
   ```
 
+## Step 2 - Use the **firewall** RHEL system role
+* Learn more about the [**firewall system role**](https://external.ink?to=/github.com/linux-system-roles/firewall).  What is its purpose?  What are the [**variable options**](https://external.ink?to=/github.com/linux-system-roles/firewall#examples-of-options) that can define how you configure firewalld?
+* Now that we have a better understanding on how to use the firewall rhel system role, let's up it into practice:
+   * Update the same **Linux / System Roles** job template from step 1 with the following extra vars:<br>
+   (NOTE: system_roles: \[firewall\]) key/value is updated to indicate which RHEL system role we intend to use.)
+   ```yaml
+   ---
+   system_roles:
+     - firewall
+   firewall:
+     - interface: eth2
+       zone: trusted
+       state: enabled
+     - service: tftp
+       state: enabled
+  ```
+By using the rhel system roles collection, we can create one job template that can be reused in an infinite number of ways.  The behavior of the job template execution changes based on the variables passed to it.  You can run a single role as an adhoc configuration, as we just did, or execute multiple roles with complex definitions based off of variable files devined in a project that can define how different groups of servers should be configured (i.e. by application, purpose, dev, prod, etc...).
 
-## Step 2 - 
+RHEL System Roles also simplifies the process of managing the same configuration across several different RHEL OS versions such as RHEL 7 and RHEL 8, and in some cases RHEL 6.  Based on the role used, you would have the same variable definitions regardless of the underlying OS services/daemons that are used by the underlying OS (e.g. network role supports both initscripts/RHEL6 and network manager/RHEL78+ and it will autodetect the OS and configure accordingly).
 
 ----
 
