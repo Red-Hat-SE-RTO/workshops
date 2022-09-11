@@ -189,7 +189,7 @@ $ podman push hub.XXXXXX.example.opentlc.com/student#_rhel_system_roles_ee --tls
 #### 2.7 - Add EE to Automation Controller
 Now the same execution environment can be used on ansible navigator on your workstation during developement of playbooks as well as in Automation Controller in production.  So, let's add it to our Automation Controller in our labs<br>
 * First, add credentials so Controller can retrieve the EE from Private Automation Hub:<br>
-Go to: **Resources** -> **Credentials** -> **Add** -> Complete the form as follows:
+Go to: **Resources** -> **Credentials** -> **Add** -> Complete the form as follows:<br>
 <table>
     <tr>
       <th>Field</th>
