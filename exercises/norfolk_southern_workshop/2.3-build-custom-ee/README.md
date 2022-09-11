@@ -252,6 +252,9 @@ Go to: **Administration** -> **Execution Environments** -> **Add** -> Complete f
       <td>REGISTRY CREDENTIAL</td>
       <td>Private Automation Hub Credential</td>
     </tr>
+    <tr>
+      <td colspan="2">![custom ee image location](images/custome_ee_pull_location.png)</td>
+    </tr>
   </table><br>
 
 ![custom ee image location](images/custome_ee_pull_location.png)
