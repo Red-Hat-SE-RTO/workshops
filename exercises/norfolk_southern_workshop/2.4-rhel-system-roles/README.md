@@ -102,18 +102,29 @@ For an up-to-date list of available roles, as well as a support matrix that deta
   * Enter **node\*** for host pattern -> Click **Launch**<br>
   * Review the output to see breadth and scope of what is checked by this role.<br>&nbsp;<br>
   You will see some output that will show you the tasks that were skipped and tasks that stayed the same, and tasks that made a change.  For the tasks that changed it will give you a glimpse as to what configuration file was changed and the setting that was added or taken away. 
-* 
-run adhoc commands in AC to review settings
-Inventory
-Select node1-3
-Run Command
-Module: command
-Arguments: chronyc sources -v
-Enable Privlege Escalation: enabled
-Click: Next
-Select “rhel_system_role_ee” -> Click “Next”
-Select “Workshop Credential” -> Click “next”
-Click “Launch”
+* run adhoc commands in AC to review target node chrony settings and confirm that the ntp server is set to the ansible-1 control node.
+    * Go to: **Resources** -> **Inventories** -> **Workshop Inventory** -> **Hosts** tab 
+    * Check **node1**, **node2**, and **node3** -> Click **Run Command**
+    * Update the form as follows:
+    &nbsp;&nbsp;&nbsp;&nbsp;<table>
+    <tr>
+      <th>Field</th>
+      <th>Value</th>
+    </tr>
+    <tr>
+      <td>MODULE</td>
+      <td>Command</td>
+    </tr>
+    <tr>
+      <td>ARGUEMENTS</td>
+      <td>chronyc sources -v</td>
+    </tr>
+    <tr>
+      <td>ENABLE PRIVILEGE ESCALATION</td>
+      <td>Enabled</td>
+    </tr>
+  </table>
+* Click **Next** -> **Default execution environment** -> **Next** -> **Workshop Credential** -> **Next** -> **Launch**
 
 ## Step 2 - Use the **firewall** RHEL system role
 * Learn more about the [**firewall system role**](https://external.ink?to=/github.com/linux-system-roles/firewall).  What is its purpose?  What are the [**variable options**](https://external.ink?to=/github.com/linux-system-roles/firewall#examples-of-options) that can define how you configure firewalld?
