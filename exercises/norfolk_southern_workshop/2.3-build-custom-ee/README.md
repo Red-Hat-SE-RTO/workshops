@@ -225,6 +225,7 @@ Go to: **Resources** -> **Credentials** -> **Add** -> Complete the form as follo
   </tr>
 </table>
 
+#### 2.7 - Add EE to Automation Controller
 
 * Then, add the new execution environment to Automation Controller<br>
 Go to: **Administration** -> **Execution Environments** -> **Add** -> Complete form as follows:
