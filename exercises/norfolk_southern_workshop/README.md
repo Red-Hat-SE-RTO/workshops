@@ -45,7 +45,7 @@ This is a custom workshop and time may vary depending on questions and exposure 
  - [Exercise 2.3 - Build your Own Custom Execution Environment](2.3-build-custom-ee/)
  - [Exercise 2.4 - RHEL System Roles](2.4-rhel-system-roles)
 
-## Section 3 - Supplemnetal Exercises
+## Section 3 - Supplemental Exercises
 
  - [Exercise 3 - ServiceNow integration with AAP (optional)](https://external.ink?to=/play.instruqt.com/embed/redhat/tracks/getting-started-servicenow-automation?token=em_5ktpLJWtzpbqcDyM&show_challenges=true)
  
