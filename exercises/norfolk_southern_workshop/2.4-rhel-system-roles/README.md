@@ -125,7 +125,7 @@ For an up-to-date list of available roles, as well as a support matrix that deta
     </tr>
   </table>
 * Click **Next** -> **Default execution environment** -> **Next** -> **Workshop Credential** -> **Next** -> **Launch**
-
+* Review output for nodes 1-3 and see that the ntp settings now reflect the new ntp server we set up.
 ## Step 2 - Use the **firewall** RHEL system role
 * Learn more about the [**firewall system role**](https://external.ink?to=/github.com/linux-system-roles/firewall).  What is its purpose?  What are the [**variable options**](https://external.ink?to=/github.com/linux-system-roles/firewall#examples-of-options) that can define how you configure firewalld?
 * Now that we have a better understanding on how to use the firewall rhel system role, let's put it into practice:
