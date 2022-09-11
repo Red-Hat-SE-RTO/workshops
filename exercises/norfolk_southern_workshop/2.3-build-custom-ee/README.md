@@ -252,12 +252,9 @@ Go to: **Administration** -> **Execution Environments** -> **Add** -> Complete f
       <td>REGISTRY CREDENTIAL</td>
       <td>Private Automation Hub Credential</td>
     </tr>
-    <tr>
-      <td colspan="2">![custom ee image location](images/custome_ee_pull_location.png)</td>
-    </tr>
   </table><br>
 
-![custom ee image location](images/custome_ee_pull_location.png)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![custom ee image location](images/custome_ee_pull_location.png)
 * Click **Save**
 
 Now, your custom execution environment is availbe in Automation controller and associated with a job tempate that requires the RHEL System Roles collection.  If you later need to add some dependencies or more collections to the container, you can just go back to your EE project and make changes to your requirements.txt, requirements.yml, bindep.txt, and/or prepend/append commands and rebuild, push, then pull.  Be sure to update the versions in the execution_environment.yml.
