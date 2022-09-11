@@ -219,11 +219,11 @@ Go to: **Resources** -> **Credentials** -> **Add** -> Complete the form as follo
       <td>PASSWORD OR TOKEN</td>
       <td>**Student Credentials**</td>
     </tr>
-  <tr>
+    <tr>
       <td>VERIFY SSL</td>
       <td>Disabled</td>
-  </tr>
-</table>
+    </tr>
+  </table>
 
 #### 2.7 - Add EE to Automation Controller
 
