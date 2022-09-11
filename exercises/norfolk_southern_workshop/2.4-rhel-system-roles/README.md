@@ -39,7 +39,7 @@ Configuration-related roles:
   - <strong>postfix</strong> (tech preview) configures the postfix email server.
   - <strong>ha_cluster</strong> (tech preview) manages high availability clustering.
 
-For an up-to-date list of available roles, as well as a support matrix that details which versions of RHEL are supported by each role, [refer to this page](https://access.redhat.com/articles/3050101). 
+For an up-to-date list of available roles, as well as a support matrix that details which versions of RHEL are supported by each role, [refer to this page](https://external.ink?to=/access.redhat.com/articles/3050101). 
 
 ## Step 1 - Use the **timesync** rhel system role
 * Learn more about the timesync system roles.  What is its purpose?  What are the variable options that can define how your environment gets configured?
@@ -146,10 +146,15 @@ For an up-to-date list of available roles, as well as a support matrix that deta
   * Review output.  Notice, we simply defined a couple of settings and the role:
       * Installed firewalld, started the service, and configured the firewall as defined.
 
-By using the rhel system roles collection, we can create one job template that can be reused in an infinite number of ways.  The behavior of the job template execution changes based on the variables passed to it.  You can run a single role as an adhoc configuration, as we just did, or execute multiple roles with complex definitions based off of variable files devined in a project that can define how different groups of servers should be configured (i.e. by application, purpose, dev, prod, etc...).
+By using the rhel system roles collection, we can create one job template that can be reused in an infinite number of ways.  The behavior of the job template execution changes based on the variables passed to it.  You can run a single role as an adhoc configuration, as we just did, or execute multiple roles with complex definitions based off of various variable files defined in a project that organized by different inventory groups (i.e. by application, purpose, dev, prod, etc...).
 
-RHEL System Roles also simplifies the process of managing the same configuration across several different RHEL OS versions such as RHEL 7 and RHEL 8, and in some cases RHEL 6.  Based on the role used, you would have the same variable definitions regardless of the underlying OS services/daemons that are used by the underlying OS (e.g. network role supports both initscripts/RHEL6 and network manager/RHEL78+ and it will autodetect the OS and configure accordingly).
+RHEL System Roles also simplify the process of managing the same configuration across different RHEL OS versions such as RHEL 7, RHEL 8, RHEL 9, and in some cases RHEL 6.  Based on the role used, you would have the same variable definitions regardless of the underlying OS services/daemons that are used by a particluar RHEL OS major version (e.g. network role supports both initscripts/RHEL6 and network manager/RHEL7+ and it will autodetect the OS and configure accordingly).
 
+For more ideas on how to leverage RHEL System Roles, refer to this list of blogs:
+* [Automating firewall configuration with RHEL System Roles](https://external.ink?to=/www.redhat.com/en/blog/automating-firewall-configuration-rhel-system-roles)
+* [Automating storage management with RHEL System Roles](https://external.ink?to=/www.redhat.com/en/blog/automating-storage-management-rhel-system-roles)
+* [Automating network and Microsoft SQL Server configuration using RHEL System Roles](https://external.ink?to=/www.redhat.com/en/blog/automating-network-and-microsoft-sql-server-configuration-using-rhel-system-roles)
+* [Using RHEL System Roles to automate and manage Network Bound Disk Encryption](https://external.ink?to=/www.redhat.com/en/blog/using-rhel-system-roles-automate-and-manage-network-bound-disk-encryption)
 ----
 
 [Return to the Workshop Exercises](../README.md)
