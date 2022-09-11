@@ -98,8 +98,8 @@ For an up-to-date list of available roles, as well as a support matrix that deta
    ip_protocol: chronyd
   ```
   * Ensure “privilege escalation” is checked
-  * Click “Save” -> Click “Next” -> * Click “Launch”
-  * Enter **“node*”** for host pattern<br>
+  * Click **Save** -> Click **Next** -> * Click **Launch**
+  * Enter **node** for host pattern<br>
   You will now see some output that will show you the tasks that were skipped and tasks that stayed the same, and tasks that made a change.  For the tasks that changed it will give you a glimpse as to what configuration file was changed and the setting that was added or taken away. 
 * 
 run adhoc commands in AC to review settings
