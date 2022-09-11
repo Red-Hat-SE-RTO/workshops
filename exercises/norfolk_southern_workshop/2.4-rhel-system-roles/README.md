@@ -142,6 +142,10 @@ For an up-to-date list of available roles, as well as a support matrix that deta
      - service: tftp
        state: enabled
   ```
+  * **Save** and **Launch** and use **node\*** as your host pattern.
+  * Review output.  Notice, we simply defined a couple of settings and the role:
+      * Installed firewalld, started the service, and configured the firewall as defined.
+
 By using the rhel system roles collection, we can create one job template that can be reused in an infinite number of ways.  The behavior of the job template execution changes based on the variables passed to it.  You can run a single role as an adhoc configuration, as we just did, or execute multiple roles with complex definitions based off of variable files devined in a project that can define how different groups of servers should be configured (i.e. by application, purpose, dev, prod, etc...).
 
 RHEL System Roles also simplifies the process of managing the same configuration across several different RHEL OS versions such as RHEL 7 and RHEL 8, and in some cases RHEL 6.  Based on the role used, you would have the same variable definitions regardless of the underlying OS services/daemons that are used by the underlying OS (e.g. network role supports both initscripts/RHEL6 and network manager/RHEL78+ and it will autodetect the OS and configure accordingly).
