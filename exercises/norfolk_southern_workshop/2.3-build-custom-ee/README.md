@@ -75,13 +75,13 @@ url=https://galaxy.ansible.com
 ```
 
 #### 2.3 - Define how you want your EE built
-The **execution_environments.yml** file is located in the rhel_system_roles_ee project directory.  It defines how the EE will be built.
+The **execution_environment.yml** file is located in the rhel_system_roles_ee project directory.  It defines how the EE will be built.
 * Add **version:** directive.  This is the first version of this EE, so we can start with 1.  If you later make changes to the container that will replace existing EE, you will use 2, and so on.  Versions do not have to be a number.
 ```yaml
 ---
 version: 1
 ```
-* Next, Add **dependencies:**. We are going to be installing this collection from a collection on a galaxy server.  To build build collections into EEs, you need to add the FQCN (Fully Qualified Collection Name) to the **requirements.yml** file. (note: packages are added to bindep.txt file and python dependencies are added to requirements.txt as shown in comment fields)
+* Next, Add **dependencies:**. We are going to be installing this collection from a collection on a galaxy server.  To build collections into EEs, you need to add the FQCN (Fully Qualified Collection Name) to the **requirements.yml** file. (note: packages are added to bindep.txt file and python dependencies are added to requirements.txt as shown in comment fields)
 ```yaml
 dependencies:
   galaxy: requirements.yml
@@ -167,7 +167,7 @@ $ ansible-builder build -v3 -t hub.<workshop_id>.example.opentlc.com/student#_rh
 > 
 > Be sure to replace **student#** with your student number
 > We are all sharing the same private automation hub.  This will allow each student to determine which EE is theirs.
-* Verify you newly created EE locally:
+* Verify your newly created EE locally:
 ```bash
 [student@ansible-1 rhel_system_roles_ee]$ podman images
 REPOSITORY                                                               TAG         IMAGE ID      CREATED        SIZE
@@ -183,6 +183,9 @@ hub.rh4ccb.example.opentlc.com/ee-minimal-rhel8                          latest 
 ```bash
 $ podman push hub.XXXXXX.example.opentlc.com/student#_rhel_system_roles_ee --tls-verify=false
 ```
+* Now you should be able to se the your student# EE on the shared PAH.
+![verify student ee](images/verify_student_ee.png)
+
 #### 2.7 - Add EE to Automation Controller
 Now the same execution environment can be used on ansible navigator on your workstation during developement of playbooks as well as in Automation Controller in production.  So, let's add it to our Automation Controller in our labs<br>
 * First, add credentials so Controller can retrieve the EE from Private Automation Hub:<br>
