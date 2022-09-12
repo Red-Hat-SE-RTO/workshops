@@ -136,15 +136,25 @@ For an up-to-date list of available roles, as well as a support matrix that deta
    system_roles:
      - firewall
    firewall:
-     - interface: eth2
-       zone: trusted
-       state: enabled
-     - service: tftp
+     - zone: my-custom-zone
+       state: present
+     - source:
+         - 192.168.0.74
+         - 10.0.0.233
+       zone: my-custom-zone
+       service:
+         - cockpit
+         - pmcd
+         - ssh
+       port:
+         - 80/tcp
        state: enabled
   ```
   * **Save** and **Launch** and use **node\*** as your host pattern.
   * Review output.  Notice, we simply defined a couple of settings and the role:
       * Installed firewalld, started the service, and configured the firewall as defined.
+      * Again, we can verify with an adhoc command:<br>
+      Module Arguments: firewall-cmd --list-all --zone=my-custom-zone
 
 By using the rhel system roles collection, we can create one job template that can be reused in an infinite number of ways.  The behavior of the job template execution changes based on the variables passed to it.  You can run a single role as an adhoc configuration, as we just did, or execute multiple roles with complex definitions based off of various variable files defined in a project that organized by different inventory groups (i.e. by application, purpose, dev, prod, etc...).
 
