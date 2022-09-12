@@ -183,7 +183,7 @@ hub.rh4ccb.example.opentlc.com/ee-minimal-rhel8                          latest 
 ```bash
 $ podman push hub.XXXXXX.example.opentlc.com/student#_rhel_system_roles_ee --tls-verify=false
 ```
-* Now you should be able to se the your student# EE on the shared PAH.
+* Now you should be able to see the your student# EE on the shared PAH.
 ![verify student ee](images/verify_student_ee.png)
 
 #### 2.7 - Add EE to Automation Controller
